@@ -27,7 +27,7 @@ Send addresses once:<br>
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/screen.png" alt="erc20-tokens-multi-sender">
 
 Site1:
-https://CryptoDappRun.github.io/Bee-Sender/
+https://cryptodapprun.github.io/Bee-Sender/
 
 Site2:
 https://dapp404.com/Bee-Sender
