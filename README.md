@@ -5,14 +5,14 @@ Bee Sender v2-ERC20 Token Airdrop Multi Sender.Packer your multi transfer in one
 ``Batch Send ETH/BNB/Matic...``<br>
 Current support Blockchain networks:<br>
 Ethereum,Binance,Huobi,Fantom,Polygon and Ropsten testnetwork.<br><br>
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/1.png" width="25" height="25" alt="eth"> 
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/56.png" width="25" height="25" alt="bnb">
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/250.png" width="25" height="25" alt="ftm">
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/137.png" width="25" height="25" alt="matic"> 
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/43114.png" width="25" height="25" alt="matic">
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/25.png" width="25" height="25" alt="matic">
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/13381.png" width="25" height="25" alt="matic">
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/img/534.png" width="25" height="25" alt="matic">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/1.png" width="25" height="25" alt="eth"> 
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/56.png" width="25" height="25" alt="bnb">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/250.png" width="25" height="25" alt="ftm">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/137.png" width="25" height="25" alt="matic"> 
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/43114.png" width="25" height="25" alt="matic">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/25.png" width="25" height="25" alt="matic">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/13381.png" width="25" height="25" alt="matic">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/534.png" width="25" height="25" alt="matic">
 <br>
 V2 add features:<br>
 1.Sending tokens with decimal points is now supported,like:1.01,2.3,33 is accept.<br>
@@ -24,10 +24,10 @@ V2 add features:<br>
 Send addresses once:<br>
 1-500<br>
 
-<img src="https://github.com/AlgoCryptoDapp/Bee-Sender/blob/main/screen.png" alt="erc20-tokens-multi-sender">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/screen.png" alt="erc20-tokens-multi-sender">
 
 Site1:
-https://AlgoCryptoDapp.github.io/Bee-Sender/
+https://CryptoDappRun.github.io/Bee-Sender/
 
 Site2:
 https://dapp404.com/Bee-Sender
