@@ -4,7 +4,7 @@ Bee Sender v2-ERC20 Token Airdrop Multi Sender.Packer your multi transfer in one
 ``Batch Send Token``<br>
 ``Batch Send ETH/BNB/Matic...``<br>
 Current support Blockchain networks:<br>
-Ethereum,Binance,Huobi,Fantom,Polygon and Ropsten testnetwork.<br><br>
+Ethereum,Binance,Huobi,Fantom,Polygon,Avalanche,Cronos,Moonbeam,Moonriver.<br><br>
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/1.png" width="25" height="25" alt="eth"> 
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/56.png" width="25" height="25" alt="bnb">
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/250.png" width="25" height="25" alt="ftm">
@@ -13,6 +13,8 @@ Ethereum,Binance,Huobi,Fantom,Polygon and Ropsten testnetwork.<br><br>
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/25.png" width="25" height="25" alt="matic">
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/13381.png" width="25" height="25" alt="matic">
 <img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/534.png" width="25" height="25" alt="matic">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/1284.png" width="25" height="25" alt="moonbeam">
+<img src="https://github.com/CryptoDappRun/Bee-Sender/blob/main/img/1285.png" width="25" height="25" alt="moonriver">
 <br>
 V2 add features:<br>
 1.Sending tokens with decimal points is now supported,like:1.01,2.3,33 is accept.<br>
