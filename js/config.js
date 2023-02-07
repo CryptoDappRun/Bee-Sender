@@ -17,4 +17,5 @@ var EthereumFee=0.01;
 var CronosFee=3;
 var PhoenixFee=0.1;
 var CandleFee=1; 
-
+var MoonbeamFee=1;
+var MoonriverFee=0.05;
