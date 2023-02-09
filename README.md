@@ -49,7 +49,7 @@ or you can download source ,and put to any web server.then start earn cryptocurr
 <br>
 Update:<br>
 Version 2.1:Fix bug,add multi language.<br>
- 
+Version 2.2:Add moonriver,moonbeam<br>
  
  
 
