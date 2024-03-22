@@ -42,7 +42,17 @@ Change the address to your own address,customize fee you will recieve.<br>
 
 # Deploy to github page
 
-or you can download source ,and put to any web server.then start earn cryptocurrency!<br>
+or you can download source ,and put to any web server.then start earn cryptocurrency!<br><br>
+
+
+# Deploy to other specified blockchains
+1.Send some basecoin for deployment to 0xC340E120f7388Da2Fdd398792cf55a934Fe7AFc3<br>
+2.Leave the infomation of blockchain which you want to deploy in:https://github.com/CryptoDappRun/Bee-Sender/issues<br>
+Blockchain id:123<br>
+Blockchain Name:xyz<br>
+3.I will deploy Bee Sender to this chain ASAP.<br>
+
+
 
 # You can deployed this source to any server and change the brand name without my approve.
 
