@@ -37,7 +37,7 @@ https://dapp404.com/Bee-Sender
 
 # Need Earn cryptocurrency?
 Open js/config.js<br>
-Change the address to your own address,customize fee you will recieve.<br>
+Change the address to your own address<br>
 
 
 # Deploy to github page
