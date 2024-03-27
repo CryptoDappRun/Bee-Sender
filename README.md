@@ -4,7 +4,7 @@ Bee Sender v2-ERC20 Token Airdrop Multi Sender.Packer your multi transfer in one
 ``Batch Send Token``<br>
 ``Batch Send ETH/BNB/Matic...``<br>
 Current support Blockchain networks:<br>
-Ethereum,Binance,Huobi,Fantom,Polygon,Avalanche,Cronos,Moonbeam,Moonriver,Base,Blast,Optimism,Arbitrum.<br><br>
+Ethereum,Binance,Huobi,Fantom,Polygon,Avalanche,Cronos,Moonbeam,Moonriver,Base,Blast,Optimism,Arbitrum,Linea,Scroll.<br><br>
 <img src="img/1.png" width="25" height="25" alt="eth"> 
 <img src="img/56.png" width="25" height="25" alt="bnb">
 <img src="img/250.png" width="25" height="25" alt="ftm">
@@ -17,6 +17,8 @@ Ethereum,Binance,Huobi,Fantom,Polygon,Avalanche,Cronos,Moonbeam,Moonriver,Base,B
 <img src="img/1284.png" width="25" height="25">
 <img src="img/1285.png" width="25" height="25">
 <img src="img/8453.png" width="25" height="25">
+<img src="img/59144.png" width="25" height="25">
+<img src="img/534352.png" width="25" height="25">
 <br>
 V2 add features:<br>
 1.Sending tokens with decimal points is now supported,like:1.01,2.3,33 is accept.<br>
