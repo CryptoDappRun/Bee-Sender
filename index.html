@@ -1,1631 +1,1147 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-			<title>Universal Crypto Paper Wallet Generator,Bitcoin,Ethereum,Binance cold/offline wallet</title>
-			<meta name="description" content="A lightweight, reliable, fast, open-source universal paper wallet generator supporting almost every major cryptocurrency">
-				<meta name="keywords" content="minimal, lightweight, reliable, fast, universal, paper, wallet, generator, offline, bitcoin, btc, cryptocurrency">
-					<meta name="viewport" content="width=device-width, initial-scale=1">
-                        <link rel="stylesheet" href="css/style.css">
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-						</head>
-						
-	
-	<body>
-	 
-							<div id="container">
-								<br>
-									<br>
-										<h1 id="title">Universal Paper Wallet Custom Generator</h1>
-										<br>
-											<br>
-												<input type="text" id="searchInput" onkeyup="Search()" placeholder="search cryptocurrency">
-													<ol id="searchOL">
-														<li>
-															<a href="bitcoin.html">Bitcoin (BTC)</a>
-														</li>
-														<li>
-															<a href="ethereum.html">Ethereum (ETH)</a>
-														</li>
 
-														<li>
-															<a href="#" class="erc20">BinanceCoin(BNB)</a>
-														</li>
-<li><a href="solana.html">Solana(SOL)</a></li>											
-<li><a href="#" class="erc20">Polygon(Matic)</a></li>
-<li><a href="#" class="erc20">Avalanche(AVAX)</a></li>
-<li><a href="toncoin.html">TonCoin (TON)</a></li>
-<li><a href="#" class="erc20">Arbitrum</a></li>
-<li><a href="#" class="erc20">Optimism(OP)</a></li>
-<li><a href="#" class="erc20">Base</a></li>
-<li><a href="#" class="erc20">Cronos(CRO)</a></li>
-<li><a href="#" class="erc20">Gnosis(GNO)</a></li>
-<li><a href="#" class="erc20">Celo(CELO)</a></li>
-<li><a href="#" class="erc20">Fantom(FTM)</a></li>
-<li><a href="#" class="erc20">Linea</a></li>
-<li><a href="#" class="erc20">Moonbeam(GLMR)</a></li>
-<li><a href="#" class="erc20">Moonriver(MOVR)</a></li>
-<li><a href="#" class="erc20">Beam</a></li>
-<li><a href="#" class="erc20">Harmony(ONE)</a></li>
-<li><a href="#" class="erc20">Boba</a></li>
-<li><a href="#" class="erc20">ThunderCore(TT)</a></li>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--Bee sender 2.1-->
+    <title  > Bee Sender-ERC20 Token Multi Sender.Packer your multi transfer in one transaction and save your cost.Ethereum,Binance,Polygon...</title>
 
 
 
+<style type="text/css">
+  
 
-														<li>
-															<a href="ripple.html">Ripple (XRP)</a>
-														</li>
-														<li>
-															<a href="stellar.html">Stellar (XLM)</a>
-														</li>
-														<li>
-															<a href="bitcoincash.html">Bitcoin Cash (BCH)</a>
-														</li>
-														<li>
-															<a href="monero.html">Monero (XMR)</a>
-														</li>
-														<li>
-															<a href="litecoin.html">Litecoin (LTC)</a>
-														</li>
-														<li>
-															<a href="dash.html">Dash (DASH)</a>
-														</li>
-														
-														<li>
-															<a href="zcash.html">Zcash (ZEC)</a>
-														</li>
-														<li>
-															<a href="monacoin.html">Monacoin (MONA)</a>
-														</li>
-														<li>
-															<a href="digibyte.html">DigiByte (DGB)</a>
-														</li>
-														<li>
-															<a href="bitcoingold.html">Bitcoin Gold (BTG)</a>
-														</li>
-														<li>
-															<a href="qtum.html">Qtum (QTUM)</a>
-														</li>
-														<li>
-															<a href="dogecoin.html">Dogecoin (DOGE)</a>
-														</li>
-														<li>
-															<a href="reddcoin.html">ReddCoin (RDD)</a>
-														</li>
-														<li>
-															<a href="banano.html">Banano (BAN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">0x(ZRX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">300Token(300)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ace(ACE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">adbank(ADB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AdEx(ADX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AdShares(ADST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">adToken(ADT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">aelf(ELF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aeron(ARN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aeternity(AE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Agrello(DLT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AIDoctor(AIDOC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AICHAIN(AIT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AidCoin(AID)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aigang(AIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aion(AION)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AirSwap(AST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AirToken(AIR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ALIS(ALIS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AllSports(SOC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Alphabit(ABC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Amber(AMB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AppCoins(APPC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aragon(ANT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ArbitrageCT(ARCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ArcadeToken(ARC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Arcblock(ABT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Astro(ASTRO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ATLANT(ATL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ATMChain(ATM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ATN(ATN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Augur(REP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">AuroraDAO(AURA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Authorship(ATS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Autonio(NIO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Aventus(AVT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">aXpire(AXP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">B2B(B2B)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bancor(BNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bankex(BKX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BCAP(BCAP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bezop(BEZ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BiboxToken(BIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BigONEToken(BIG)</a>
-														</li>
+  .avatar.avatar-online:after {
+    background-color: #71dd37;
+}
 
-														<li>
-															<a href="#" class="erc20">Bitair(BTCA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitAsean(BAS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitBoost(BBT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitClave(CAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitcoinSilver(BTCS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bitcoin2x(BTC2X)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitDegree(BDG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitDice(CSNO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">bitJob(STU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitparkCoin(BPC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">bitqy(BQ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BitSerial(BTE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Blackmoon(BMC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BlackmoonCrypto(BMC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BlockArray(ARY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BlockCAT(CAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BlockCDN(BCDN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BlockchainIndex(BLX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Blockport(BPT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Blocktix(TIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BLOCKv(VEE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bloom(BLT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BLUE(BLUE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bluzelle(BLZ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bolenum(BLN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bonpay(BON)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bottos(BTO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bounty0x(BNTY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BRAT(BRAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bread(BRD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">BTCMoon(BTCM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Bytom(BTM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">C20(C20)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Candy(CANDY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CanYaCoin(CAN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cappasity(CAPP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CargoX(CXO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CarTaxiToken(CTX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">carVertical(CV)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CashPokerPro(CASH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cashaa(CAS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ccore(CCO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Centra(CTR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ChainLink(LINK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Change(CAG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Chronobank(TIME)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Chronologic(DAY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cindicator(CND)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Civic(CVC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ClearPoll(POLL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cloud(CLD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cobinhood(COB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cofound.it(CFI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Coimatic3.0(CTIC3)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CoinDash(CDT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CoinFi(COFI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Coinlancer(CL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CoinMeet(MEE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">COMSA[ETH](CMS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Copytrack(CPY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Corethum(CRTM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">COSS(COSS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Covesting(COV)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CPChain(CPC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Creditbit(CRB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Credo(CREDO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Crypterium(CRPT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CryptoInsight(TKR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Cryptopay(CPAY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CrystalClear(CCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">CyberMiles(CMT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DADI(DADI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dai(DAI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dalecoin(DALC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DAO.Casino(BET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DATA(DTA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Datawallet(DXT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Datum(DAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DCORP(DRP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DecentBet(DBET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Decentraland(MANA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DecisionToken(HST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Delphy(DPY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dent(DENT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dentacoin(DCN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dether(DTH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Devery(EVE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DEW(DEW)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DigiPulse(DGPT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DigixDAO(DGD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DimonCoin(FUDD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">district0x(DNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Divi(DIVX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DMarket(DMT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DomRaider(DRT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dovu(DOVU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Dragonchain(DRGN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">DRPUtility(DRPU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">E4ROW(E4ROW)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EagleCoin(EAGLE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eBIT(EBIT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eBitcoinCash(EBCH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eBTC(EBTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EchoLink(EKO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Edgeless(EDG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EDUCare(EKT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eGold(EGOLD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Eidoo(EDO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Elixir(ELIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Embers(MBRS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Emphy(EPY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EncrypGen(DNA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Energo(TSL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Enigma(ENG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Enigma(XNG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EnjinCoin(ENJ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Envion(EVN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EOS(EOS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Equal(EQL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ERC20(ERC20)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eREAL(EREAL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Eroscoin(ERO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EthBet(EBET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ethbits(ETBS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EtherDeltaToken(EDT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Etherecash(ECH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EthereumCash(ECASH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EthereumGold(ETG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EthereumLite(ELITE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Etheriya(RIYA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Etheroll(DICE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Etherparty(FUEL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EtherSportz(ESZ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ETHGAS(EGAS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EthLend(LEND)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ethorse(HORSE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ethos(ETHOS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">eUSD(EUSD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EventChain(EVC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Everex(EVX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Everus(EVR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ExchangeUnion(XUC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ExchangeN(EXN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Experty(EXY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">EXRNchain(EXRN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Facecoin(FC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FairGame(FAIR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FAPcoin(FAP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Farad(FRD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FidentiaX(FDX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FirstBlood(1ST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FLiK(FLIK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Flixxo(FLIXX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FlypMe(FYP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Fortuna(FOTA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FuckToken(FUCK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Fujinto(NTO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FundYourselfNow(FYN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FunFair(FUN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Fusion(FSN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">FuturXe(FXE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Game(GTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GameChainSystem(GCS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Gatcoin(GAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Gems(GEM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GenaroNetwork(GNX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GenesisVision(GVT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GETProtocol(GET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Gifto(GTO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GigaWattToken(WTT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Gimli(GIM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GladiusToken(GLA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GlobalJobcoin(GJC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Gnosis(GNO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GoldUnionCoin(GUC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Golem(GNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Goodomy(GOOD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Grid+(GRID)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GUESS(GUESS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">GUTSTickets(GET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Hacken(HKN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Hawala.Today(HAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Hedge(HDG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HelloGold(HGT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HEROcoin(PLAY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Hive(HVN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HiveProject(HVN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HODLBucks(HDLB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HubiiNetwork(HBT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Humaniq(HMQ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HydroProtocol(HOT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">HyperTV(HYTV)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iBTC(IBTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ICON(ICX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Iconomi(ICN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ICOS(ICOS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">IDEXMembership(IDXM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iDice(ICE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iEthereum(IETH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iExecRLC(RLC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">indaHash(IDH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Indicoin(INDI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">IndorseToken(IND)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">InkProtocol(XNK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">INSEcosystem(INS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">InsurePal(IPL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Internxt(INXT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">InvestDigital(IDT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">InvestFeed(IFT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">IOStoken(IOST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">IoTChain(ITC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">IPChain(IPC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iQuant(IQT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Iungo(ING)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">iXledger(IXT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">JesusCoin(JC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Jetcoin(JET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">JibrelNetwork(JNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">KickCoin(KICK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Kin(KIN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">KuberaCoin(KBR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">KuCoinShares(KCS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">KyberNetwork(KNC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Lamden(TAU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Lampix(PIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LAToken(LA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LegendsRoom(LGD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LendConnect(LCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Leverj(LEV)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LIFE(LIFE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LightChain(LIGHT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LinkPlatform(LNK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LiteCoinGold(LTG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LLToken(LLT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LOCIcoin(LOCI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">LockChain(LOC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Loopring(LRC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Lunyr(LUN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Lympo(LYM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Macro(MCR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Maecenas(ART)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Maggie(MAG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Maker(MKR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Matchpool(GUP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Matryx(MTX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MaverickChain(MVC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MCAP(MCAP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Medicalchain(MTN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MediShares(MDS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Melon(MLN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MercuryProtocol(GMT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Metal(MTL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MicroMoney(AMM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Minereum(MNE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Mixin(XIN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MOAC(MOAC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MobileGo(MGO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Modum(MOD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MolecularFuture(MOF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Monaco(MCO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MoneroGold(XMRG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Monetha(MTH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Mothership(MSP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Musiconomi(MCI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MyBitToken(MYB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Mysterium(MYST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">MyWish(WISH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">NAGA(NGC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Natcoin(NTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nebulas(NAS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">NetworkToken(NTWK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Neumark(NEU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">NeuroDAO(NDAO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Neurotoken(NTK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">NEVERDIE(NDC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Newbium(NEWB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nework(NKC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nexium(NXC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nimfamoney(NIMFA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nimiq(NET)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nitro(NOX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">NucleusVision(NCASH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Nuls(NULS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Numeraire(NMR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OAX(OAX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Odyssey(OCN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OlympusLabs(MOT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OmiseGO(OMG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OneRootNetwork(RNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">onG.social(ONG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Opus(OPT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OriginTrail(TRAC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OrmeusCoin(ORME)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OXFina(OX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Oyster(PRL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">OysterPearl(PRL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Paragon(PRG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Patientory(PTOY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Payfair(PFR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Paypex(PAYX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PayPie(PPP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Pillar(PLR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PiplCoin(PIPL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Playkey(PKT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PlexCoin(PLX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PlusCoin(PLC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Pluton(PLU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Po.et(POE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">POLYAI(AI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Polybius(PLBT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PolymathNetwork(POLY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Populous(PPT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PoSToken(POS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PowerLedger(POWR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Presearch(PRE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PressOne(PRS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Primas(PST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Privatix(PRIX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ProChain(PRO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Propy(PRO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ProspectorsGold(PGL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Publica(PBL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PundiX(PXS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Purpose(PRPS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">PylonNetwork(PYLNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">QASH(QASH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Quantstamp(QSP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Quantum(QAU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Qube(QUBE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">QunQun(QUN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Qvolta(QVT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">RChain(RHOC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Read(READ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">REAL(REAL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">RealChain(RCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Rebellious(REBL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">REDMWAT(MWAT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Refereum(RFR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">RefToken(REF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Remicoin(RMC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Remme(REM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">RequestNetwork(REQ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Revain(R)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">REX(REX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Rialto(XRL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Rivetz(RVT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Rock(RKT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">RouletteToken(RLT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ruff(RUFF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SALT(SALT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SandCoin(SND)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Scry.info(DDD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Selfkey(KEY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SelfSell(SSC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Senderon(SDRN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Sense(SENSE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Sether(SETH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Sharechain(SSS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ShareX(SEXC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Show(SHOW)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SimpleToken(OST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SingularDTV(SNGLS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SingularityNET(AGI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SIRINLABSToken(SRN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SkinCoin(SKIN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SmartBillions(SMART)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SmartMesh(SMT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Snovio(SNOV)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Soarcoin(SOAR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Social(SCL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Sociall(SCL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Soma(SCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SONM(SNM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SophiaTX(SPHTX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SpankChain(SPANK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SphreAIR(XID)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SportyCo(SPF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SportyFi(SPF)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Starbase(STAR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">StarChain(STC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">StarCredits(STRC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Status(SNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">STK(STK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Storj(STORJ)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Storm(STORM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Stox(STX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">StreamrDATAcoin(DATA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Substratum(SUB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SugarExchange(SGR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SunContract(SNC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Suretly(SUR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Swapcoin(SWP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Swarm(SWM)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SwarmCity(SWT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SwftCoin(SWFTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">SwissBorg(CHSB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TaaS(TAAS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TargetCoin(TGT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Telcoin(TEL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TenX(PAY)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ThetaToken(THETA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Tierion(TNT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TIESNetwork(TIE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Ties.DB(TIE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Tigereum(TIG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TimeNewBank(TNB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Tokenbox(TBX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TokenCard(TKN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TokenClub(TCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TopChain(TOPC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Tracto(TRCT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TradeToken(TIO)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Triaconta(TRIA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TridentGroup(TRDT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TRON(TRX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TrueChain(TRUE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">TrueFlip(TFL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">U.CASH(UCASH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">UGToken(UGT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ugChain(UGC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">UnikoinGold(UKG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Universa(UTNP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">UnlimitedIP(UIP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Upfiring(UFR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">UquidCoin(UQC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">UTRUST(UTK)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ValueChain(VLC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">VeChain(VEN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Verify(CRED)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Veritaseum(VERI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Veros(VRS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Vezt(VZT)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">VIBE(VIBE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Viberate(VIB)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Viuly(VIU)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Voise(VOISE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">vSlice(VSL)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WaBi(WABI)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Walton(WTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Waltonchain(WTC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WandX(WAND)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WAX(WAX)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WePower(WPR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WETH(WETH)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WeTrust(TRST)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WiCoin(WIC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">WildCrypto(WILD)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Wings(WINGS)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Worldcore(WRC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Xaurum(XAUR)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Xenon(XNN)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">XPA(XPA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">XPlay(XPA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Yee(YEE)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Zap(ZAP)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">ZCashGold(ZCG)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Zeusshield(ZSC)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Zilla(ZLA)</a>
-														</li>
-														<li>
-															<a href="#" class="erc20">Zilliqa(ZIL)</a>
-														</li>
-													</ol><br>
-<p align="center">
-<a href="https://github.com/CryptoDappRun/Cryptocurrency-Paper-Wallet-Generator" target=_blank>Source Code</a> | <a href="https://github.com/CryptoDappRun/UniWallet" target=_blank>UniWallet</a> |  Donate Bitcoin:18Zzs99QC7AeygMJyiaP5eVawPyN4mNu66 
+.avatar {
+    position: relative;
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+}
+      .rightIcon{
+        width: : 30px;
+    }
 
-</p>  
+
+    #loader1 {
+  width: 200px;
+  display: none;
+}
+
+    #loader2 {
+  width: 200px;
+  display: none;
+}
+
+
+.bg-nav-white {
+    background-color: #ffffff33!important;
+}
+
+    .Gradient-Background {
+
+        background: linear-gradient(to left top, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
+        color: #fff;
+    }
+
+
+
+ .btn-success {
+      background-color:#7cffcb;
+      background-image:linear-gradient(to right, rgba(55, 236, 186, 1), rgba(114, 175, 211, 1));
+      }
+      .btn-info {
+      background-color: #eec0c6;
+      background-image: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+      }
+      .btn-secondary {
+      background-color: #7f5a83;
+      background-image: linear-gradient(to right, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));
+      }
+      .btn-primary {
+      background-color: #2a2a72;
+      background-image: linear-gradient(to right, rgba(85, 221, 94, 1), rgba(102, 166, 255, 1));
+      }
+      .btn-warning {
+      background-color: #f8ceec;
+      background-image: linear-gradient(to right, rgba(94, 231, 223, 1), rgba(180, 144, 202, 1));
+      }
+      .btn- {
+      background-color: #b1bfd8;
+      background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+      }
+      .btn-light {
+      background-color: #42378f;
+      background-image: linear-gradient(315deg, #758283 0%, #CAD5E2 74%);
+      }
+      .btn-danger {
+      background-color: #2a2a72;
+      background-image: (to right, rgba(166, 192, 254, 1), rgba(246, 128, 132, 1));
+      }
+            .btn-dark {
+      background-color: #2a2a72;
+      background-image: (to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+      }
+     
+      button{
+     
+      outline: none;
+      border:0px;
+      border-radius: 40px;
+   
+      margin:10px;
+      cursor: pointer;
+      color: #fff;
+      background-size: 280% 180%;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      transition:all .4s ease-in-out;
+      border: 0px !important;
+      }
+      button:hover{
+      background-position: 90% 0;
+      transition: all .2s ease-in-out;
+      }
+
+
+
+</style>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+
+
+
+      <!--********************Nav Bar******************************-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+ <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Token-Factory">Token Factory </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Bee-Sender">Token Airdrop Sender</a>
+      </li>
+      
+      
+        <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Bitcoin-Signer-Wallet">Bitcoin/Dogecoin Offline Wallet</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Blockchain-To-Metamask">EVM Blockchain index</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Router-EVM-Cross-Chain-Bridge">EVM Bridge</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Crypto Tool
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+ 
+          <a class="dropdown-item" target="_blank" href="https://github.com/CryptoDappRun/">Woocommerce Token Payment Gateway(All EVM compatible)</a>
+      
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/Cryptocurrency-Paper-Wallet-Generator">Paper Wallet Generator</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/AirWallet-Ethereum-Offline-Free-wallet">ETH Cold Wallet</a>
+      </li>
+
+<li class="nav-item">
+          <a class="nav-link" href="https://github.com/CryptoDappRun/UniWallet" target="_blank">Uniwallet</a>
+ </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/CryptoDappRun/">Support</a>
+      </li>
+
+
+    </ul>
+
+
+  
+
+
+  </div>
+</nav>
+<!--********************Nav Bar******************************-->
+
+
+
+<body id="page-top"  class="text-secondary font-weight-light Gradient-Background">
+
+    <!-- Page Wrapper -->
+    <div id=" ">
+
+        <!-- Sidebar -->
+
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light rounded  bg-nav-white topbar m-3 static-top shadow">
+
+<div><img src="img/bee.png" width="33" height="33"> <b class="m-1 text-dark">Bee Sender </b></div>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search 
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+-->
+                    <!-- Topbar Navbar ml-auto-->
+                    <ul class="navbar-nav ml-auto">
+ 
+
+<li class=" my-auto mx-2 shadow ">
+<select class="custom-select " id="SelectOptionID" onchange="SelectOptionChange( )">
+
+<option value="1"  class="lang" key="Ethereum">Ethereum</option>     
+<option value="56"  class="lang" key="Binance">Binance</option>
+<option value="128" class="lang" key="Huobi">Huobi</option> 
+<option value="137">Polygon </option> 
+<option value="250">Fantom</option> 
+<option value="43114">Avalanche</option>  
+<option value="25">Cronos</option>  
+
+<option value="1284">Moonbeam</option>  
+<option value="1285">Moonriver</option>  
+<option value="8453">Base</option>  
+
+<option value="81457">Blast</option>  
+<option value="10">Optimism</option>  
+<option value="42161">Arbitrum</option>  
+
+<option value="59144">Linea</option>  
+<option value="534352">Scroll</option>  
+<!--
+
+<option value="13381">Phoenix</option>  
+<option value="534">Candle</option>  
+-->
+
+</select>
+
+</li>
+
+<!-- <option value="3" >Ropsten Testnet Chain</option>-->
+
+<li class=" my-auto mx-2 shadow ">
+<a href="https://youtu.be/HDyPbMbA-Og" target="blank"  ><button class="btn btn-primary">How to use</button></a>
+
+</li>
+<li class="my-auto mx-2 shadow">
+<a href="https://github.com/AlgoNetwork/Bee-Sender-v2" target="blank"  ><button class="btn btn-info">Github</button></a>
+</li>
+ 
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts 
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts 
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>-->
+                            <!-- Dropdown - Alerts 
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+-->
+                        <!-- Nav Item - Messages 
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages 
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>-->
+                            <!-- Dropdown - Messages 
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+-->
+
+
+                            <!--
+<button id="en" class="translate">English</button>
+<button id="zh" class="translate">简体中文</button>
+<button id="ru" class="translate">русский</button> 
+<button id="kr" class="translate">한국어</button> 
+<button id="fa" class="translate">فارسی</button> 
+<button id="jp" class="translate">日本語</button> 
+<button id="th" class="translate">ไทย</button> 
+                            -->
+
+  
+<!-- language -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                
+                                
+                                <img class="img-profile rounded-circle"
+                                    src="img/lang.png">
+                            </a>
+                            
+
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a id="en" class="dropdown-item translate" href="#">
+                                    <i  class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    English
+                                </a>
+                                <a id="zh"  class="dropdown-item translate" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400 translate"></i>
+                                   简体中文
+                                </a>
+
+                                 
+ 
+
+								<a id="ru"  class="dropdown-item translate" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400 translate"></i>
+                                  русский
+                                </a>
+                                <a id="kr"  class="dropdown-item translate" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400 translate"></i>
+                                  한국어
+                                </a>
+                           <!--     <div class="dropdown-divider"></div>-->
+                       
+                            </div>
+                              
+                        </li>
+
+
+<!-- language -->
+
+
+
+
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+
+
+
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span  id='CurrentAddress' class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/metamask.png">
+                            </a>
+                            <!-- Dropdown - User Information
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                             -->
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid d-flex justify-content-center">
+
+                    <!-- Page Heading 
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
+-->
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Earnings (Monthly) Card Example 
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Earnings (Annual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+-->
+                        <!-- Earnings (Monthly) Card Example
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example 
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        
+
+                         
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row m-5 w-50">
+
+                        <!-- Content Column -->
+                       
+
+                        <div class="col-lg-12 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary lang" key="Token MultiSender">Token MultiSender</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center  ">
+                                        <img   src="img/bee.png" width="33" height="33">
+                                    </div>
+
+
+
+									<div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Bee Sender</h1>
+                                    </div>
+                                    <div class="text-center">
+                                     
+                                        <h1 class="h6 text-gray-900 mb-4 lang" key="SiteTitle">Pack and send Multi transfer in one Transaction</h1>
+ 
+
+                                    </div>
+ <div class="card-body">
+<div class="text-center">
+
+
+
+
+
+<!--
+  <select class="custom-select w-25" id="SelectISend" onchange="ISendChange( )">
+  
+   <option value="1"  class="lang" key="Ethereum">Ethereum</option>
+  <option value="56"  class="lang" key="Binance">Binance</option>
+  <option value="128" class="lang" key="Huobi">Huobi</option> 
+  <option value="137">Polygon </option> 
+  <option value="250">Fantom</option> 
+  <option value="43114">Avalanche</option>  
+   <option value="25">Cronos</option>  
+   <option value="13381">Phoenix</option>  
+<option value="534">Candle</option>  
+  <option value="3" >Ropsten Testnet Chain</option> 
+
+  </select>
+-->
+ 
+<!-- language -->
+<ul class="navbar-nav ml-auto  ">
+<li class="nav-item dropdown no-arrow d-flex justify-content-center  ">
+                            <a class="nav-link dropdown-toggle " href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                
+                                
+                                <img  width="60" height="60" id="CurrentBlockchainImageID" class="img-profile rounded-circle shadow" src="img/1.png">
+                            </a>
+                            
+
+                            
+                            <div id="ChooseBlockchainDIVid" class="dropdown-menu dropdown-menu-center  " aria-labelledby="userDropdown" style="position: absolute; transform: translate3d(326px, 66px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start">
+                            
+                       
+                            </div>
+
+
+                              
+                        </li>
+
+                        </ul>
+<!-- language -->
+
+<br>
+
+<div  class="text-muted " id="BlockchainNameID" >   </div>
+<div><small class="text-muted" id="SendFeeText" >    </small></div>
+
+
+
+
+									<!--
+									<div class="small mb-1">Choose your Blockchain:</div>
+                                    <div class="dropdown mb-4">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Binance
+                                        </button>
+                                        <div class="dropdown-menu animated--fade-in"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Binance</a>
+                                            <a class="dropdown-item" href="#">Huobi</a>
+                                            <a class="dropdown-item" href="#">Polygon</a>
+                                        </div>
+                                    </div>
+                                    -->
+</div></div>
+<br> 
+
+<form  >
+<div class="form-group">
+
+
+
+<div class="radio-buttons-choice d-flex flex-row m-2" id="">
+
+    <div class="m-2">
+        <input type="radio" name="SendToken" id="SendTokenRadioID" onclick="SendEtherOrToken(name)">
+        <label class="lang " key="Send Token"  >Batch Send Token</label><br>
+    </div> 
+    
+    <div class="m-2">     
+        <input type="radio" name="SendEther" id="SendEtherRadioID" onclick="SendEtherOrToken(name)">
+        <label   id="SendEtherTitleID" class="lang " key="Batch Send ETH">Batch Send ETH</label>
+    </div>
+
+</div>
+
+<div id="TokenInfoDiv" class="m-2">
+
+<div class="text-xs font-weight-bold text-primary   mb-1 lang" key="Token Address">Token Address</div>
+<input class="form-control form-control-user" type="text" id="TokenAddress" oninput="ActiveTokenContract()" aria-describedby="emailHelp" placeholder="for example:0x122..aef">
+
+<small id="balanceOf" class="text-muted"  ></small>
+
+
+<center>                                              <br> 
+<img id="loader2" src="loading.gif"></img>  
+</center>  
+
+ <center>  
+   <button id="approveThisButton" onclick="approveThis(contractAdress);return false;" style="display: none;" class="btn btn-primary">Approve</button> 
+   </center> 
+<br>
+</div>
+
+</div>
+
+
+
+ 
+
+       <div class="radio-buttons-choice m-1" id="AddressAndAmount">
+        <input type="radio" name="SameAmount" id="SendSameAmountRadio" onclick="SendType(name)">
+        <!--<img src='img/high.png' width="33" height="33"  > --> 
+        <label class="lang m-1" key="Send same amount to each address"  >Send same amount to each address</label><br>
+
+        <input type="radio" name="UploadCSV" id="SendDiffAmountRadio" onclick="SendType(name)">
+       <!--<img src='img/low.png' width="33" height="33"  > --> 
+        <label class="lang m-1" key="Use CSV file">Use CSV file</label>
+    </div>
+ 
+ 
+
+<div class=" m-2" id="SendSameAmountDiv">
+
+                                        <div class="form-group">
+                                        <div class="text-xs font-weight-bold text-primary   mb-1 lang" key="Send amount">
+                                                Send amount</div>
+                                            <input  class="form-control form-control-user"
+                                                type="text" id="MultiSendAmount"  placeholder="Send Amount per Address:1.01,5,30....">
+                                        </div>
+
+                                        <div class="form-group">
+                                        <div class="text-xs font-weight-bold text-primary   mb-1 lang" key="Address list(1-500 addresses)">
+                                                Address list(1-500 addresses)</div>
+                                            <textarea id="AddressArea" class="form-control" placeholder="Address per line. " rows="10"></textarea>
+                                        </div>
+ </div>
+
+<div id="SendDiffAmountDiv">
+
+
+
+<input type="file" id="fileUpload" />
+<a  href="example.csv">Download example csv</a>
+
+<!--
+<input type="button" id="upload" value="Show Content" onclick="Upload()" />
+ -->
+<!--
+<hr />
+-->
+
+ 
+ </div>
+<br>
+
+
+
+ <!--style="color:white"-->
+
+<center>
+
+<img id="loader1" src="loading.gif"></img>
+ <!--<div class=text-white-50" id="Tips" ></div>-->
+
+
+<div class="card bg-secondary text-white shadow" id="Tips">
+
+</div>
+
+
+
+<div id="PriceSuggest">  </div>
+
+</center>
+
+<center><div id="transactionHashLabel" class="m-2"></div></center> 
+
+
+<br>
+ 
+       <div class="radio-buttons-choice" id="container-3-radio-buttons-choice">
+        <input type="radio" name="Medium" id="one-variable-equations" onclick="checkRadio(name)">
+        <img src='img/high.png' width="33" height="33"  > 
+        <label class="lang" key="Medium gas fee">Medium gas fee</label><br>
+
+        <input type="radio" name="low" id="multiple-variable-equations" onclick="checkRadio(name)">
+        <img src='img/low.png' width="33" height="33"  > 
+        <label class="lang" key="Low gas fee">Low gas fee</label>
+    </div>
+
+
+
+
+                                       
+ <center><button id="MultiSendButton" type="button"  style="display: none;"  class="btn btn-primary">Multi Send</button> </center>  
+
+
+<br>
+
+<div id="dvCSV">
+</div>
+
+                                        
+ </form>
+                                 
+
+
+                                    
+
+
+                                  
+                                  <!-- <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                                        unDraw &rarr;</a>--> 
+                                </div>
+                            </div>
+
+                            <!-- Approach 
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
+                                </div>
+                                <div class="card-body">
+                                 <img  src="img/example.png"  >
+                                    <p> </p>
+                                </div>
+                            </div>-->
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+
+
+
+<footer class="pt-4 my-md-5   shadow">
+    <div class="container  text-white">
+        <footer class="py-5">
+
+
+<!--
+            <div class="row">
+                <div class="col-4">
+                    <h5> </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://github.com/AlgoNetwork/TokenFactory" class="nav-link p-0 text-dark ">Token Factory</a></li>
+                        <li class="nav-item mb-2"><a href="https://algonetwork.github.io/Bee-Sender/" class="nav-link p-0 text-dark ">Token Multi Sender</a></li>
+                        <li class="nav-item mb-2"><a href="https://algonetwork.github.io/EVM-Blockchain-Index/" class="nav-link p-0  text-dark">Chain List</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h5> </h5>
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item mb-2"><a href="https://algonetwork.github.io/Cross-Chain-Bridge-Trading-Transfer-between-Ethereum-Binance-Polygon/" class="nav-link p-0  text-dark">EVM Bridge</a></li>
+                        <li class="nav-item mb-2"><a href="https://github.com/AlgoNetwork/Woocommerce-Ethereum-Evm-Compatible-ERC20-BEP20-Token-Payment-Gateway" class="nav-link p-0  text-dark">Woocommerce Cyrpto Token Payment Gateway</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h5> </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://github.com/AlgoNetwork/TokenFactory/issues" class="nav-link p-0 text-dark">Support</a></li>
+
+                        <li class="nav-item mb-2"><a href="https://github.com/AlgoNetwork/EasyNFT-Generator-Bulk-NFT-to-Opensea" class="nav-link p-0 text-dark">Bulk NFT</a></li>
+
+
+                        <li class="nav-item mb-2"><a href="https://github.com/AlgoNetwork/NFTBox-NFT-Staking-Market" class="nav-link p-0 text-dark">NFT Box-NFT Staking Market</a></li>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+-->
+
+            <div class="d-flex justify-content-between text-dark py-4 my-4  ">
+                <p>© 2024 Crypto Dapp Run</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</footer>
+
+
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+   <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins 
+    <script src="vendor/chart.js/Chart.min.js"></script>
+-->
+    <!-- Page level custom scripts
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+ -->
+
+
+   <script src="js/all.min.js"   crossorigin="anonymous"></script>
+    <script src="js/contract.js"></script>
+    <script src="js/token.js"></script>
+     <script src="js/config.js"></script>
+      <script src="js/global.js"></script>
+    <!--https://code.jquery.com/jquery-3.5.1.slim.min.js-->
+    <!--<script src="js/jquery-3.5.1.slim.min.js"    integrity=""></script>-->
+    <script src="js/popper.min.js"  integrity=""></script>
+
+    <!--https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js-->
+    <!--<script src="js/bootstrap.min.js"       integrity=""     ></script>-->
+ 
+
+     <script src='js/bignumber.js'></script>
+<script src="js/web3.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>-->
+  
+
+<script type="text/javascript">
+    var arrLang = {
+      'en': {
+        'SiteTitle': 'Bee Sender-ERC20 Token Multi Sender.Packer your multi transfer in one transaction and save your cost.',
+        'Ethereum': 'Ethereum',
+        'Binance': 'Binance',
+        'Huobi': 'Huobi',
+        'Token Address': 'Token Address',
+        'Send same amount to each address': 'Send same amount to each address',
+        'Use CSV file': 'Use CSV file',
+        'Send amount': 'Send amount',
+        'Address list(1-500 addresses)': 'Address list(1-500 addresses)',
+        'Medium gas fee': 'Medium gas fee',
+        'Low gas fee': 'Low gas fee',
+        'Token MultiSender': 'Token Multi Sender',
+        'Send Token': 'Batch Send Token'
+      },
+      'zh': {
+        'SiteTitle': 'Bee Sender-同时发送代币和本币给多个地址',
+        'Ethereum': '以太坊链',
+        'Binance': '币安链',
+        'Huobi': '火币链',
+        'Token Address': '代币地址',
+        'Send same amount to each address': '发送相同的数量到每个地址',
+        'Use CSV file': '使用CSV文件',
+        'Send amount': '发送数量',
+        'Address list(1-500 addresses)': '地址列表(1-500个地址,一行一个地址)',
+        'Medium gas fee': '中等Gas费',
+        'Low gas fee': '低Gas费',
+        'Token MultiSender': '批量发送代币或本币',
+        'Send Token': '批量发送代币'
+
+      },
+
+      'ru': {
+        'SiteTitle': 'Bee Sender-ERC20 Token Multi Sender. Упакуйте мультиперевод в одну транзакцию и сэкономьте на затратах.',
+        'Ethereum': 'Ethereum',
+        'Binance': 'Binance',
+        'Huobi': 'Huobi',
+        'Token Address': 'Адрес токена',
+        'Send same amount to each address': 'Отправить одинаковую сумму на каждый адрес',
+        'Use CSV file': 'Использовать CSV-файл',
+        'Send amount': 'Отправить сумму',
+        'Address list(1-500 addresses)': 'Список адресов (1-500 адресов)',
+        'Medium gas fee': 'Плата за средний газ',
+        'Low gas fee': 'Низкая плата за газ',
+        'Token MultiSender': 'Токен MultiSender',
+        'Send Token': 'Batch Send Token'
+      },
+
+
+      'kr': {
+        'SiteTitle': 'Bee Sender-ERC20 Token Multi Sender.Packer는 하나의 트랜잭션으로 다중 전송을 수행하고 비용을 절약합니다.',
+        'Ethereum': 'Ethereum',
+        'Binance': 'Binance',
+        'Huobi': 'Huobi',
+        'Token Address': '토큰 주소',
+        'Send same amount to each address': '각 주소로 동일한 금액 보내기',
+        'Use CSV file': 'CSV 파일 사용',
+        'Send amount': '송금 금액',
+        'Address list(1-500 addresses)': '주소 목록(1-500 주소)',
+        'Medium gas fee': '중간 가스 요금',
+        'Low gas fee': '낮은 가스 요금',
+        'Token MultiSender': '토큰 다중 전송자',
+        'Send Token': 'Batch Send Token'
+      },
+      'fa': {
+ 
+      },
+
+      'jp': {
+ 
+      },
+
+      'th': {
+ 
+      }
+
+    };
+
+    // Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+console.log("change language..");
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
+  </script>
+
+
 
 <script>
-function Search() {
-var input, filter, ul, li, a, i;
-input = document.getElementById("searchInput");
-filter = input.value.toUpperCase();
-ul = document.getElementById("searchOL");
-li = ul.getElementsByTagName("li");
-for (i = 0; i < li.length; i++) {
-a = li[i].getElementsByTagName("a")[0];
-if (a.textContent.toUpperCase().indexOf(filter) > -1) {li[i].style.display = "";}
-else {li[i].style.display = "none";}
-}}
-var ol = document.getElementById("searchOL");
-ol.onclick = function(event) {var target = event.target;if(target.className === "erc20"){if (location.hostname === "") window.location.replace("ethereum.html?"+ target.textContent);else window.location.replace("ethereum?"+  target.textContent);}};
+ 
+
+
+var _0x45dbb5=_0x1874;(function(_0x4c68f0,_0x3b4d4e){var _0x2738ac=_0x1874,_0x26e94f=_0x4c68f0();while(!![]){try{var _0x2b025b=parseInt(_0x2738ac(0x277))/0x1+-parseInt(_0x2738ac(0x237))/0x2+parseInt(_0x2738ac(0x252))/0x3*(parseInt(_0x2738ac(0x1f1))/0x4)+-parseInt(_0x2738ac(0x1ec))/0x5*(parseInt(_0x2738ac(0x2db))/0x6)+parseInt(_0x2738ac(0x2f3))/0x7*(-parseInt(_0x2738ac(0x270))/0x8)+-parseInt(_0x2738ac(0x26a))/0x9+parseInt(_0x2738ac(0x21c))/0xa;if(_0x2b025b===_0x3b4d4e)break;else _0x26e94f['push'](_0x26e94f['shift']());}catch(_0x53b09a){_0x26e94f['push'](_0x26e94f['shift']());}}}(_0x3de1,0x31eaa));var _0x4425e9=(function(){var _0x79fe32=!![];return function(_0x3ebff0,_0x3f83fb){var _0x360011=_0x79fe32?function(){if(_0x3f83fb){var _0x3e0173=_0x3f83fb['apply'](_0x3ebff0,arguments);return _0x3f83fb=null,_0x3e0173;}}:function(){};return _0x79fe32=![],_0x360011;};}()),_0x1a462c=_0x4425e9(this,function(){var _0xa5ac41=_0x1874;return _0x1a462c[_0xa5ac41(0x292)]()[_0xa5ac41(0x2b0)](_0xa5ac41(0x2f8))[_0xa5ac41(0x292)]()[_0xa5ac41(0x1cf)](_0x1a462c)[_0xa5ac41(0x2b0)](_0xa5ac41(0x2f8));});_0x1a462c();var _0x16ce80=(function(){var _0x5cc0a8=!![];return function(_0x5189e1,_0x18a58e){var _0x54072b=_0x5cc0a8?function(){var _0x12f914=_0x1874;if(_0x18a58e){var _0x679716=_0x18a58e[_0x12f914(0x27d)](_0x5189e1,arguments);return _0x18a58e=null,_0x679716;}}:function(){};return _0x5cc0a8=![],_0x54072b;};}()),_0x45d612=_0x16ce80(this,function(){var _0x5d2a88=_0x1874,_0x405187;try{var _0x1e9e46=Function(_0x5d2a88(0x235)+_0x5d2a88(0x291)+');');_0x405187=_0x1e9e46();}catch(_0x511571){_0x405187=window;}var _0x427f1e=_0x405187['console']=_0x405187[_0x5d2a88(0x287)]||{},_0x4dcfc5=['log',_0x5d2a88(0x20e),'info',_0x5d2a88(0x2d0),_0x5d2a88(0x2ea),_0x5d2a88(0x2f5),'trace'];for(var _0x13668c=0x0;_0x13668c<_0x4dcfc5[_0x5d2a88(0x200)];_0x13668c++){var _0x1a4959=_0x16ce80['constructor'][_0x5d2a88(0x1dd)][_0x5d2a88(0x30a)](_0x16ce80),_0xc48aa0=_0x4dcfc5[_0x13668c],_0xbb3b18=_0x427f1e[_0xc48aa0]||_0x1a4959;_0x1a4959['__proto__']=_0x16ce80[_0x5d2a88(0x30a)](_0x16ce80),_0x1a4959['toString']=_0xbb3b18[_0x5d2a88(0x292)][_0x5d2a88(0x30a)](_0xbb3b18),_0x427f1e[_0xc48aa0]=_0x1a4959;}});_0x45d612();var Coins={'1':{'Name':_0x45dbb5(0x2ca),'ID':'1','Symbol':_0x45dbb5(0x26e),'Scan':_0x45dbb5(0x25c),'Fee':0.01,'FunctionContract':_0x45dbb5(0x1a5)},'56':{'Name':'Binance','ID':'56','Symbol':'BNB','Fee':0.005,'Scan':_0x45dbb5(0x297),'FunctionContract':_0x45dbb5(0x295)},'128':{'Name':'Huobi','ID':_0x45dbb5(0x245),'Symbol':'HB','Fee':0.01,'Scan':_0x45dbb5(0x2ba),'FunctionContract':_0x45dbb5(0x19f)},'137':{'Name':'Polygon','ID':_0x45dbb5(0x268),'Symbol':_0x45dbb5(0x1a4),'Fee':0.1,'Scan':_0x45dbb5(0x2f1),'FunctionContract':_0x45dbb5(0x1f5)},'250':{'Name':_0x45dbb5(0x1eb),'ID':_0x45dbb5(0x26d),'Symbol':'FTM','Fee':0.1,'Scan':'https://ftmscan.com/','FunctionContract':_0x45dbb5(0x1f5)},'43114':{'Name':_0x45dbb5(0x271),'ID':_0x45dbb5(0x2bf),'Symbol':_0x45dbb5(0x216),'Fee':0.1,'Scan':_0x45dbb5(0x1b1),'FunctionContract':'0x7bf4950A24bc1D6DD6eD1CE4E3c4C50F33b6a358'},'25':{'Name':_0x45dbb5(0x273),'ID':'25','Symbol':_0x45dbb5(0x29d),'Fee':0x3,'Scan':_0x45dbb5(0x2bb),'FunctionContract':_0x45dbb5(0x1bc)},'1284':{'Name':_0x45dbb5(0x2fc),'ID':_0x45dbb5(0x1aa),'Symbol':_0x45dbb5(0x1f3),'Fee':0.1,'Scan':_0x45dbb5(0x1e2),'FunctionContract':_0x45dbb5(0x1ae)},'1285':{'Name':_0x45dbb5(0x2ab),'ID':'1285','Symbol':'Moonriver','Fee':0.1,'Scan':'https://moonriver.moonscan.io/','FunctionContract':_0x45dbb5(0x1ae)},'8453':{'Name':_0x45dbb5(0x207),'ID':_0x45dbb5(0x29c),'Symbol':_0x45dbb5(0x26e),'Fee':0.0001,'Scan':'https://basescan.org/','FunctionContract':_0x45dbb5(0x1ae)},'81457':{'Name':_0x45dbb5(0x19b),'ID':_0x45dbb5(0x1fe),'Symbol':_0x45dbb5(0x26e),'Fee':0.001,'Scan':_0x45dbb5(0x312),'FunctionContract':_0x45dbb5(0x1ae)},'10':{'Name':'Optimism','ID':'10','Symbol':_0x45dbb5(0x26e),'Fee':0.001,'Scan':'https://optimistic.etherscan.io/','FunctionContract':_0x45dbb5(0x1ae)},'42161':{'Name':_0x45dbb5(0x249),'ID':'42161','Symbol':_0x45dbb5(0x26e),'Fee':0.001,'Scan':_0x45dbb5(0x257),'FunctionContract':_0x45dbb5(0x1ae)},'534352':{'Name':_0x45dbb5(0x306),'ID':_0x45dbb5(0x305),'Symbol':_0x45dbb5(0x26e),'Fee':0.001,'Scan':_0x45dbb5(0x233),'FunctionContract':_0x45dbb5(0x1ae)},'59144':{'Name':_0x45dbb5(0x2cf),'ID':_0x45dbb5(0x204),'Symbol':_0x45dbb5(0x26e),'Fee':0.001,'Scan':_0x45dbb5(0x2fb),'FunctionContract':_0x45dbb5(0x1ae)}};console[_0x45dbb5(0x2a5)](_0x45dbb5(0x1b9),FeeReciever),console['log'](_0x45dbb5(0x1c8));function _0x3de1(){var _0x1959af=['1284','usd','fileUpload:','https://rpc-mainnet.matic.network','0x5B2643DB5fA7894e6630c8Ab56c828E9Ca186e0C','ReadCSVtoArray\x20SendFee:','Already\x20approved!','https://avascan.info/blockchain/c/','removeClass','decimals','current_price','floor','https://bsc-dataseed1.binance.org/','hide','Token\x20Address\x20Wrong','FeeReciever\x20Address:','<div\x20class=\x27alert\x20alert-warning\x27\x20role=\x27alert\x27>\x20<a\x20\x20\x20href=\x27https://metamask.io/\x27>Metamask\x20not\x20install,Click\x20to\x20Install\x20Metamask\x20First</a></div>','getTime','0x7Cc6241DbDc7522f921F822B419B1593D45C43da','#hours','This\x20is\x20the\x20ropsten\x20test\x20network.','Matic(Polygon)\x20Mainnet','ReadCSVtoArrayOBJ:','Approval\x20receipt:','This\x20is\x20the\x20Polygon\x20\x20network.','</tr>','RewardPool:','show','amount:','.toast','start','low','Use\x20contract','location','ReadCSVtoArray\x20TotalAmount:','#transactionHashLabel','returnValues','constructor','<a\x20\x20name=\x22','send','fileUpload','src','<table\x20class=table>\x20\x20<tr>\x20\x20\x20','error.code','balance:','multiple-variable-equations','#AddressArea','RewardPool','accountsChanges','multiSender','FeeReciever:','prototype','selectedIndex','https://cronoscan.com/tx/','result','This\x20is\x20the\x20ThunderCore\x20\x20network.','https://moonscan.io/','SameAmount','TokenDecimals:','0x55d398326f99059ff775485246999027b3197955','generate\x20TokenContract:','Symbol','BeeFee:','Use\x20token','#loader1','Fantom','10805pGOgrq','low\x20gas','approve','push','_value','4ZKyDNL','toChecksumAddress','Moonbeam','eth','0xfF3f092C759524CCdc2f15D0c070Fc956Bc68a73','CurrentTokenDecimals:','<span>Hours</span>','selectedAddress','ethereum','UseHighGasFee:\x20','toast','fromWei','_AddressArray:','81457','then','length','#OverTime','_tokenContractAddress:','000000000000000000','59144','SendEther','0xc2132d05d31c914a87c6611c10748aeb04b58e8f','Base','TokenAddress','This\x20is\x20an\x20unknown\x20network.','MultiSendAmount','0x04068da6c83afcfa0e13ba15a6696662335d5b75','estimateGas','fantomLimit:','warn','https://rpcapi.fantom.network','getApproveStatus...','toFixed','</td><td>','_AmountArray:','<span>Minutes</span>','Loading...','Avax','Binance\x20Smart\x20Chain\x20Mainnet','<tr><td>','allowance','\x27)\x22\x20/>','Balance:','3853760iQhliE','</table>','#fileUpload','receipt','html','binancecoin','BNB','</a>','suggest\x20price:','SelectOptionID','split','\x20<th>You\x20get</th>\x20\x20','disabled','https://http-mainnet.hecochain.com','green','ReferrerFee\x20wei:','initOrder','append','BNBPrice:','0x0000000000000000000000000000000000000000','#EventTable','accountsChanged','#SendEtherTitleID','https://scrollscan.com/','This\x20is\x20the\x20huobi\x20network.','return\x20(function()\x20','hover','423128qbybsq','nameID:','color','read\x20csv\x20Error:','Metamask\x20not\x20detected','#MultiSendButton','Can\x20not\x20read\x20This\x20token.','This\x20SendFee:','one-variable-equations','#SendDiffAmountDiv','This\x20is\x20the\x20BSC\x20\x20network.','insertCell','#SendSameAmountDiv','ContractFee','128','#balanceOf','methods','high\x20gas','Arbitrum','Name','multiSender\x20finish','SendTokenRadioID','FetchURL:','CurrentBlockchainImageID','SendSameAmountRadio','User\x20reject\x20switch\x20network.','<span>Seconds</span>','673383pTrkrM','click','multiSender\x20can\x20not\x20connect\x20to\x20the\x20smart\x20contract\x20or\x20less\x20than\x20100','#SendFeeText','hash:','https://arbiscan.io/','img/','dvCSV','fullwide','\x20</tr>','https://etherscan.io/','FTM','addClass','#dvCSV','join','binanceLimit:','checked','toWei','<img\x20class=\x22m-1\x20rounded\x22\x20\x20src=\x22img/','AmountIniterWant','polygonLimit:','I\x20Send\x20','137','toLowerCase','1284210PEghPy','catch','IsMetamask','250','ETH','Metamask\x20detected!','2654024mzbfiX','Avalanche','files','Cronos','ISendInputChange','<a\x20href=','MATIC','343297KDWwja','init\x20order\x20contractAdress:','ISendPrice:','.png\x22\x20width=\x2230\x22\x20height=\x2230\x22>','https://candleexplorer.com/tx/','#ChooseBlockchainDIVid','apply','Current\x20Network:','undefined','currentProvider','https://snowtrace.io/tx/','wallet_addEthereumChain','blockExplorerUrls','IWantPrice:','Start\x20SendMultiToken','val','console','readAsText','Please\x20choose\x20a\x20valid\x20CSV\x20file,csv\x20file\x20name\x20are\x20English\x20letters\x20only,like:\x20abc123.csv','tx/','decimal\x20*\x2010:','EndTime','call','trim','Fee:','1.png','{}.constructor(\x22return\x20this\x22)(\x20)','toString','https://phoenixplorer.com/tx/','Approval\x20failed!','0x7a2aA2b2228FB108F60Cf07F1362E0D55e31c7D9','request','https://bscscan.com/','balanceOf\x20can\x20not\x20connect\x20to\x20the\x20smart\x20contract','ETHPrice:','Bitcoin\x20Current\x20Price:\x20$','Contract','8453','CRO','forEach','pow','getElementById','.png','https://ropsten.etherscan.io/tx/','https://api.coingecko.com/api/v3/simple/price?ids=matic-network%2Cbnb%2Cethereum%2Cbinancecoin&vs_currencies=usd','SendDiffAmountRadio','log','target','contractAdress:','getId','Contract\x20fee','EndTime\x20can\x20not\x20connect\x20to\x20the\x20smart\x20contract','Moonriver\x20Network','ISendInput','current\x20network\x20equl\x20Select\x20network\x20id.\x20does\x27nt\x20need\x20switch\x20metamask','receipt:','reverse','search','</td>\x20\x20','https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&sparkline=false','This\x20is\x20mainnet','Scan','SendMultiToken\x20SendFee:','balanceOf:','#PriceSuggest','transactionHash','rpcUrls','https://hecoinfo.com/','https://cronoscan.com/','change','networkId.','innerHTML','43114','<span>Days</span>','https://moonscan.io/tx/','0xAbaBfd603054c405ca510dC8115d29059A20714A','<th>Initer\x20Want</th>\x20','reload','web3','createElement','#SendUSDDescription','https://polygonscan.com/tx/','net','Ethereum','enable','options','#days','getApproveStatus:','Linea','error','includes','wallet_switchEthereumChain','https://etherscan.io/tx/','trans_estimate_gas:','https://moonriver.moonscan.io/tx/','getPastEvents','EndTime:','utils','Fantom\x20Opera','insertRow','174ruFNfZ','approveThis:invalid\x20ethereum\x20address','ready','UploadCSV','finalAmount:','start\x20read\x20csv...','toUpperCase','once','#CurrentAddress','substring','Medium','User\x20reject\x20.','#seconds','000','SendFee:','exception','User\x20denied\x20transaction\x20signature','SelectISend','AddressArea','ReadCSVtoArray\x20CSVEtherTotal:','https://ftmscan.com','.......','https://polygonscan.com/','totalFee:','7XevCFS','price','table','#approveThisButton','map','(((.+)+)+)+$','BeeFee','appendChild','https://lineascan.build/','Moonbeam\x20Network','#Tips','NetworkIDIniterWant','\x20<th>You\x20send</th>\x20','value','test\x20error:','style','Transaction\x20Hash:\x20','Not\x20in\x20range,Exit','534352','Scroll','chainName','transactionHashLabel','Network\x20Is\x20wrong,Add\x20or\x20Switch\x20now','bind','Please\x20choose\x20a\x20valid\x20CSV\x20file,\x20CSV\x20file\x20name\x20are\x20English\x20letters\x20only,like:\x20abc123.csv','#loader2','keys','Choice:\x20','FunctionContract','message','https://ftmscan.com/tx/','https://blastscan.io/','test','Blast','This\x20is\x20the\x20kovan\x20\x20network.','#minutes','invalid\x20ethereum\x20address','0xA869b575445ea5398E3c0c3C812C32eb271dD6F4','active','#nav\x20li','#TokenInfoDiv','ether','Matic','0xD9417303d53B08616d1f6e1423E8f5cfe07d2421','code','BlockchainScan:','https://hecoinfo.com','SendEtherRadioID'];_0x3de1=function(){return _0x1959af;};return _0x3de1();}var BeeFee=0.0123456,CSVEtherTotal=0x0,ContractFee,SendTokenBool=![],binanceLimit,polygonLimit,fantomLimit,SendFee,MyTokenBalance,myContract,TransferContract,TokenContract,PriceResult,CurrentTokenDecimals=0x0,EthereumScan=_0x45dbb5(0x2d3),BinanceScan='https://bscscan.com/tx/',PolygonScan=_0x45dbb5(0x2c8),FantomScan=_0x45dbb5(0x311),CronosScan=_0x45dbb5(0x1df),AvalancheScan=_0x45dbb5(0x281),PhoenixScan=_0x45dbb5(0x293),RopstenScan=_0x45dbb5(0x2a2),KovanScan=_0x45dbb5(0x2a2),CandleScan=_0x45dbb5(0x27b),MoonbeamScan=_0x45dbb5(0x2c1),MoonriverScan=_0x45dbb5(0x2d5);console[_0x45dbb5(0x2a5)](_0x45dbb5(0x26c));var TokenContractAddress,BlockchainScan,RopstenTokenAddress=_0x45dbb5(0x2c2),KovanTokenAddress='0xBc4A22F4A76367a4F503BCDfB2c6ee6b115537a7',binanceTokenAddress=_0x45dbb5(0x1e5),polygonTokenAddress=_0x45dbb5(0x206),fantomTokenAddress=_0x45dbb5(0x20b),contractAdress,Isend,Iwant;async function CheckMetamaskConnection(){var _0x394148=_0x45dbb5;if(window[_0x394148(0x1f9)]){window[_0x394148(0x2c5)]=new Web3(window['ethereum']);try{return await ethereum[_0x394148(0x2cb)](),window[_0x394148(0x1f9)]['on'](_0x394148(0x231),function(_0x21af08){var _0x5e5885=_0x394148;console[_0x5e5885(0x2a5)](_0x5e5885(0x1da),_0x21af08),window['location'][_0x5e5885(0x2c4)]();}),window[_0x394148(0x1f9)]['on']('networkChanged',function(_0x2a60bb){var _0x19c2b5=_0x394148;console['log']('networkChanged',_0x2a60bb),window['location'][_0x19c2b5(0x2c4)]();}),!![];}catch(_0x50ba33){return![];}}else return window[_0x394148(0x2c5)]?(window[_0x394148(0x2c5)]=new Web3(web3[_0x394148(0x280)]),!![]):(console[_0x394148(0x2a5)]('Non-Ethereum\x20browser\x20detected.\x20You\x20should\x20consider\x20trying\x20MetaMask!'),![]);}$(document)[_0x45dbb5(0x2dd)](async function(){var _0x2520fc=_0x45dbb5;$('#toastButton')[_0x2520fc(0x253)](function(){var _0x198fdb=_0x2520fc;$(_0x198fdb(0x1c7))[_0x198fdb(0x1fb)]('show');});var _0x561d4a=await CheckMetamaskConnection();if(_0x561d4a){var _0x3d02e6=!![];document[_0x2520fc(0x2a0)](_0x2520fc(0x23f))['checked']=!![],document[_0x2520fc(0x2a0)](_0x2520fc(0x24f))[_0x2520fc(0x262)]=!![],document['getElementById'](_0x2520fc(0x24c))[_0x2520fc(0x262)]=!![],await addList(),$(_0x2520fc(0x240))[_0x2520fc(0x1b7)]();var _0x4930b8=await web3[_0x2520fc(0x1f4)]['net'][_0x2520fc(0x2a8)]();console[_0x2520fc(0x2a5)](_0x4930b8);if(!(_0x4930b8 in Coins)){$(_0x2520fc(0x2fd))['html']('Current\x20Blochchain\x20Network\x20is\x20not\x20support,Switch\x20to\x20Binance,Polygon\x20or\x20other\x20Blockchain\x20please.'),console[_0x2520fc(0x2a5)](_0x2520fc(0x304));return;}document[_0x2520fc(0x2a0)](_0x2520fc(0x24e))[_0x2520fc(0x1d3)]=_0x2520fc(0x258)+_0x2520fc(0x290),console[_0x2520fc(0x2a5)](_0x2520fc(0x27e),Coins[_0x4930b8]['Name']),contractAdress=Coins[_0x4930b8][_0x2520fc(0x30f)],BlockchainScan=Coins[_0x4930b8][_0x2520fc(0x2b4)],BeeFee=Coins[_0x4930b8]['Fee'],console[_0x2520fc(0x2a5)](_0x2520fc(0x2a7),contractAdress),console[_0x2520fc(0x2a5)](_0x2520fc(0x1a7),BlockchainScan),console['log'](_0x2520fc(0x1e8),BeeFee),$(_0x2520fc(0x232))[_0x2520fc(0x220)]('Send\x20'+Coins[_0x4930b8][_0x2520fc(0x1e7)]),document['getElementById']('CurrentBlockchainImageID')[_0x2520fc(0x1d3)]=_0x2520fc(0x258)+_0x4930b8+_0x2520fc(0x2a1),$('#BlockchainNameID')[_0x2520fc(0x220)](Coins[_0x4930b8][_0x2520fc(0x24a)]),document[_0x2520fc(0x2a0)](_0x2520fc(0x225))[_0x2520fc(0x300)]=_0x4930b8;var _0x4b6915=web3[_0x2520fc(0x280)][_0x2520fc(0x1f8)],_0x4be0ee=web3[_0x2520fc(0x280)][_0x2520fc(0x1f8)],_0x1b5941=web3['currentProvider'][_0x2520fc(0x1f8)][_0x2520fc(0x200)]-0x4,_0x59dff4=_0x4be0ee['substring'](0x0,0x6),_0x4dd6f1=_0x4be0ee[_0x2520fc(0x2e4)](_0x1b5941,web3[_0x2520fc(0x280)][_0x2520fc(0x1f8)][_0x2520fc(0x200)]),_0x3d50ba=_0x59dff4+_0x2520fc(0x2f0)+_0x4dd6f1;$(_0x2520fc(0x2e3))[_0x2520fc(0x220)](_0x3d50ba),myContract=await new web3[(_0x2520fc(0x1f4))][(_0x2520fc(0x29b))](SmartContractABI,contractAdress,{'from':web3[_0x2520fc(0x280)][_0x2520fc(0x1f8)]}),ContractFee=await myContract[_0x2520fc(0x247)]['fee']()['call'](),console['log'](_0x2520fc(0x2a9),ContractFee),console[_0x2520fc(0x2a5)](_0x2520fc(0x2f9),web3[_0x2520fc(0x2d8)]['toWei'](BeeFee['toString']())),SendFee=(BigInt(ContractFee)+BigInt(web3[_0x2520fc(0x2d8)][_0x2520fc(0x263)](BeeFee['toString']())))[_0x2520fc(0x292)](),console[_0x2520fc(0x2a5)](_0x2520fc(0x23e),SendFee),$(_0x2520fc(0x255))[_0x2520fc(0x220)](_0x2520fc(0x28f)+web3['utils']['fromWei'](SendFee));var _0x341c84=web3[_0x2520fc(0x280)][_0x2520fc(0x1f8)],_0x34680c,_0x36c485,_0x3a393e;async function _0x204425(){var _0x34fce8=_0x2520fc,_0x1559ce=await web3['eth'][_0x34fce8(0x2c9)][_0x34fce8(0x2a8)]();console[_0x34fce8(0x2a5)](_0x1559ce);switch(_0x1559ce){case 0x1:console[_0x34fce8(0x2a5)](_0x34fce8(0x2b3));break;case 0x2:console[_0x34fce8(0x2a5)]('This\x20is\x20the\x20deprecated\x20Morden\x20test\x20network.');break;case 0x3:console['log'](_0x34fce8(0x1be)),TokenContractAddress=RopstenTokenAddress,contractAdress=RopstenAddress,document[_0x34fce8(0x2a0)](_0x34fce8(0x2ec))[_0x34fce8(0x300)]=0x3;break;case 0x2a:console['log'](_0x34fce8(0x19c)),TokenContractAddress=KovanTokenAddress,contractAdress=KovanAddress,document[_0x34fce8(0x2a0)](_0x34fce8(0x2ec))[_0x34fce8(0x300)]=0x2a;break;case 0x38:console[_0x34fce8(0x2a5)](_0x34fce8(0x241)),TokenContractAddress=binanceTokenAddress,contractAdress=BinanceContractAddress;break;case 0x61:contractAdress=BinanceTestContractAddress,console[_0x34fce8(0x2a5)]('This\x20is\x20the\x20BSC\x20test\x20network.');break;case 0x6c:console['log'](_0x34fce8(0x1e1));break;case 0x80:console['log'](_0x34fce8(0x234));break;case 0x89:TokenContractAddress=polygonTokenAddress,contractAdress=PolygonContractAddress,console[_0x34fce8(0x2a5)](_0x34fce8(0x1c2));break;case 0xfa:TokenContractAddress=fantomTokenAddress,contractAdress=FantomContractAddress,console[_0x34fce8(0x2a5)]('This\x20is\x20the\x20Fantom\x20\x20network.');break;default:document[_0x34fce8(0x2a0)](_0x34fce8(0x24e))[_0x34fce8(0x1d3)]='img/'+String(0x1)+_0x34fce8(0x2a1),console[_0x34fce8(0x2a5)](_0x34fce8(0x209));}document[_0x34fce8(0x2a0)](_0x34fce8(0x24e))[_0x34fce8(0x1d3)]='img/'+_0x1559ce+_0x34fce8(0x2a1);}function _0x43e859(){var _0x417fae=_0x2520fc;fetch(_0x417fae(0x2b2))['then'](_0x18ba31=>_0x18ba31['json']())[_0x417fae(0x1ff)](_0x45565b=>{var _0x5e3f2d=_0x417fae;const _0x54dae3=_0x45565b['market_data'];_0x17078c('BTCPrice')['innerHTML']=_0x5e3f2d(0x29a)+_0x54dae3[_0x5e3f2d(0x1b4)][_0x5e3f2d(0x1ab)]['toFixed'](0x0),document['getElementById'](_0x5e3f2d(0x2f4))[_0x5e3f2d(0x300)]=_0x54dae3[_0x5e3f2d(0x1b4)][_0x5e3f2d(0x1ab)]['toFixed'](0x0);});}function _0x17078c(_0x49a281){var _0x5dd544=_0x2520fc;return document[_0x5dd544(0x2a0)](_0x49a281);}$('#MultiSendButton')[_0x2520fc(0x253)](function(){var _0x3b6fde=_0x2520fc;$(_0x3b6fde(0x2fd))['html'](''),$('#transactionHashLabel')[_0x3b6fde(0x220)](''),$(_0x3b6fde(0x1ea))[_0x3b6fde(0x1c5)](),SendMultiToken();}),console['log'](_0x2520fc(0x26f));}else console[_0x2520fc(0x2a5)](_0x2520fc(0x23b)),$(_0x2520fc(0x2fd))['html'](_0x2520fc(0x1ba));});async function addList(){var _0x42f401=_0x45dbb5,_0x44cb1d='';Object[_0x42f401(0x30d)](Coins)[_0x42f401(0x29e)](function(_0x440110){var _0x25fa90=_0x42f401;console[_0x25fa90(0x2a5)](_0x440110),_0x44cb1d+=_0x25fa90(0x1d0),_0x44cb1d+=_0x440110,_0x44cb1d+='\x22\x20',_0x44cb1d+='\x20class=\x22dropdown-item\x22\x20href=\x22#\x22\x20\x20onclick=\x22ChooseBlockchain(\x27',_0x44cb1d+=_0x440110,_0x44cb1d+=_0x25fa90(0x21a),_0x44cb1d+=_0x25fa90(0x264),_0x44cb1d+=Coins[_0x440110]['ID'],_0x44cb1d+=_0x25fa90(0x27a),_0x44cb1d+=Coins[_0x440110][_0x25fa90(0x24a)],_0x44cb1d+='</a>';}),$(_0x42f401(0x27c))[_0x42f401(0x22d)](_0x44cb1d);}async function ActiveTokenContract(){var _0x4bb54e=_0x45dbb5;$(_0x4bb54e(0x1cd))['html']('');try{const _0x29594d=web3['utils']['toChecksumAddress'](document[_0x4bb54e(0x2a0)](_0x4bb54e(0x208))['value']);}catch(_0x2f0b71){console[_0x4bb54e(0x2d0)](_0x4bb54e(0x19e),_0x2f0b71[_0x4bb54e(0x310)]),TokenContractAddress=document[_0x4bb54e(0x2a0)](_0x4bb54e(0x208))[_0x4bb54e(0x300)],document[_0x4bb54e(0x2a0)]('TokenAddress')[_0x4bb54e(0x228)]=![],$(_0x4bb54e(0x246))[_0x4bb54e(0x220)](_0x4bb54e(0x1b8));return;}$(_0x4bb54e(0x246))['html'](_0x4bb54e(0x215)),document[_0x4bb54e(0x2a0)](_0x4bb54e(0x208))[_0x4bb54e(0x228)]=!![];var _0x173b6f=document[_0x4bb54e(0x2a0)](_0x4bb54e(0x208))[_0x4bb54e(0x300)];TokenContract=await new web3[(_0x4bb54e(0x1f4))]['Contract'](TokenSmartContractABI,_0x173b6f,{'from':web3[_0x4bb54e(0x280)][_0x4bb54e(0x1f8)]}),console['log'](_0x4bb54e(0x1e6),TokenContract),console[_0x4bb54e(0x2a5)](_0x4bb54e(0x1ca),contractAdress),console[_0x4bb54e(0x2a5)](_0x4bb54e(0x1e9),_0x173b6f),getApproveStatus(web3[_0x4bb54e(0x280)][_0x4bb54e(0x1f8)],contractAdress);var _0x55c6d6=await balanceOf(web3[_0x4bb54e(0x280)][_0x4bb54e(0x1f8)],TokenContract);}function SelectOptionChange(){var _0xc749cc=_0x45dbb5;SelectOptionIDOBJ=document[_0xc749cc(0x2a0)](_0xc749cc(0x225)),console[_0xc749cc(0x2a5)](SelectOptionIDOBJ[_0xc749cc(0x2cc)][SelectOptionIDOBJ[_0xc749cc(0x1de)]][_0xc749cc(0x300)]),detectEthereumNetwork(SelectOptionIDOBJ[_0xc749cc(0x2cc)][SelectOptionIDOBJ['selectedIndex']][_0xc749cc(0x300)]);}async function GetEvents(_0x334afa,_0x5f1b90){var _0x37b5a1=_0x45dbb5,_0x325fd8;await _0x334afa[_0x37b5a1(0x2d6)]('allEvents',{'fromBlock':0x17df81,'toBlock':'latest'})['then'](_0x52c69a=>_0x325fd8=_0x52c69a)[_0x37b5a1(0x26b)](_0x5cf776=>console[_0x37b5a1(0x2d0)](_0x5cf776));var _0x1b219b=_0x325fd8;console['log'](_0x1b219b),templateString=_0x37b5a1(0x1d4)+_0x37b5a1(0x2c3)+_0x37b5a1(0x2ff)+_0x37b5a1(0x227)+'\x20<th>Initer\x20Network</th>\x20\x20'+_0x37b5a1(0x25b),$['each'](_0x1b219b,function(_0x21f705){var _0x1dda17=_0x37b5a1;_0x1b219b[_0x21f705][_0x1dda17(0x1ce)][_0x1dda17(0x22c)]=='1'&&_0x1b219b[_0x21f705]['returnValues'][_0x1dda17(0x2fe)]==_0x5f1b90&&(templateString+=_0x1dda17(0x218)+_0x1b219b[_0x21f705][_0x1dda17(0x1ce)]['NetworkIDIniterWant']+_0x1dda17(0x212)+web3[_0x1dda17(0x2d8)]['fromWei'](_0x1b219b[_0x21f705][_0x1dda17(0x1ce)][_0x1dda17(0x265)],_0x1dda17(0x1a3))+_0x1dda17(0x212)+web3[_0x1dda17(0x2d8)]['fromWei'](_0x1b219b[_0x21f705][_0x1dda17(0x1ce)][_0x1dda17(0x1f0)],_0x1dda17(0x1a3))+_0x1dda17(0x212)+_0x1b219b[_0x21f705]['returnValues']['_ContractNetworkID']+_0x1dda17(0x2b1)+_0x1dda17(0x1c3));}),templateString+=_0x37b5a1(0x21d),$(_0x37b5a1(0x230))['append'](templateString);}async function getPairPrice(){var _0x7841c6=_0x45dbb5,_0x5b540f=ISendobj[_0x7841c6(0x2cc)][ISendobj['selectedIndex']][_0x7841c6(0x300)],_0x2733e3=IWantobj['options'][IWantobj[_0x7841c6(0x1de)]]['value'];console[_0x7841c6(0x2a5)]('ISendValue:',_0x5b540f),console[_0x7841c6(0x2a5)]('IWantValue:',_0x2733e3),FetchURL=_0x7841c6(0x2a3),console['log'](_0x7841c6(0x24d),FetchURL),fetch(FetchURL)['then'](_0x58c012=>_0x58c012['json']())['then'](_0x19a434=>{var _0x4cacf9=_0x7841c6,_0xd8c79c=_0x19a434['ethereum'][_0x4cacf9(0x1ab)],_0x2dfcff=_0x19a434[_0x4cacf9(0x221)][_0x4cacf9(0x1ab)],_0x18c1c8=_0x19a434['matic-network'][_0x4cacf9(0x1ab)];console[_0x4cacf9(0x2a5)](_0x4cacf9(0x299),_0xd8c79c),console[_0x4cacf9(0x2a5)](_0x4cacf9(0x22e),_0x2dfcff),console[_0x4cacf9(0x2a5)]('MaticPrice:',_0x18c1c8);var _0x2fcd73,_0x5f3e02;if(_0x5b540f=='56')_0x2fcd73=_0x2dfcff;else{if(_0x5b540f=='137')_0x2fcd73=_0x18c1c8;else _0x5b540f=='1'&&(_0x2fcd73=_0xd8c79c);}if(_0x2733e3=='56')_0x5f3e02=_0x2dfcff;else{if(_0x2733e3==_0x4cacf9(0x268))_0x5f3e02=_0x18c1c8;else _0x2733e3=='1'&&(_0x5f3e02=_0xd8c79c);}return console['log'](_0x4cacf9(0x279),_0x2fcd73),console[_0x4cacf9(0x2a5)](_0x4cacf9(0x284),_0x5f3e02),PriceResult=_0x2fcd73/_0x5f3e02,console[_0x4cacf9(0x2a5)](_0x4cacf9(0x224),PriceResult[_0x4cacf9(0x211)](0x12)),$(_0x4cacf9(0x2b7))['html'](PriceResult['toFixed'](0x12)),ISendInputChange(),PriceResult;});}async function SendMultiToken(){var _0x574232=_0x45dbb5;console[_0x574232(0x2a5)](_0x574232(0x285));if(CurrentTokenDecimals==0x0&&document[_0x574232(0x2a0)](_0x574232(0x24c))[_0x574232(0x262)]){$(_0x574232(0x2fd))[_0x574232(0x220)]('fill\x20your\x20token\x20address\x20first.'),$(_0x574232(0x1ea))[_0x574232(0x1b7)]();return;}var _0x5d0b42=document[_0x574232(0x2a0)](_0x574232(0x1d2));console['log'](_0x574232(0x1ac),_0x5d0b42);if(typeof FileReader===_0x574232(0x27f)){$('#Tips')[_0x574232(0x220)](_0x574232(0x30b)),$(_0x574232(0x25f))[_0x574232(0x220)](''),$(_0x574232(0x1ea))[_0x574232(0x1b7)]();return;}if(document[_0x574232(0x2a0)](_0x574232(0x24f))[_0x574232(0x262)]&&(document[_0x574232(0x2a0)](_0x574232(0x20a))[_0x574232(0x300)]==''||document[_0x574232(0x2a0)](_0x574232(0x2ed))['value']=='')){$(_0x574232(0x2fd))[_0x574232(0x220)]('Send\x20amount\x20or\x20address\x20should\x20not\x20be\x20empty'),$(_0x574232(0x1ea))['hide']();return;}console[_0x574232(0x2a5)]('document.getElementById(\x27MultiSendAmount\x27).value',document['getElementById'](_0x574232(0x20a))[_0x574232(0x300)]),console['log'](_0x574232(0x1f6),CurrentTokenDecimals),console[_0x574232(0x2a5)](_0x574232(0x278),contractAdress);var _0x225372=[],_0x234cd1=[],_0x236d45=0x0;if(document[_0x574232(0x2a0)](_0x574232(0x24f))[_0x574232(0x262)]){var _0x341780=$(_0x574232(0x1d8))[_0x574232(0x286)]()['split'](/\n/);_0x225372=[],_0x234cd1=[];for(var _0x44dbfd=0x0;_0x44dbfd<_0x341780[_0x574232(0x200)];_0x44dbfd++){/\S/['test'](_0x341780[_0x44dbfd])&&(_0x225372['push']($[_0x574232(0x28e)](_0x341780[_0x44dbfd])),_0x234cd1['push'](BigInt(document[_0x574232(0x2a0)](_0x574232(0x20a))['value']*Math['pow'](0xa,CurrentTokenDecimals[_0x574232(0x292)]()))[_0x574232(0x292)]()),document[_0x574232(0x2a0)]('SendEtherRadioID')[_0x574232(0x262)]&&(_0x236d45=BigInt(_0x236d45)+BigInt(document[_0x574232(0x2a0)](_0x574232(0x20a))[_0x574232(0x300)]*Math['pow'](0xa,CurrentTokenDecimals[_0x574232(0x292)]())),console[_0x574232(0x2a5)]('TotalETH:',_0x236d45)));}SendFee=(BigInt(_0x236d45)+BigInt(ContractFee)+BigInt(web3[_0x574232(0x2d8)][_0x574232(0x263)](BeeFee[_0x574232(0x292)]())))[_0x574232(0x292)](),console['log']('SendFee:',SendFee);}else{console[_0x574232(0x2a5)](_0x574232(0x2e0)),_0x225372=[],_0x234cd1=[];let _0x1b11e4=await ReadCSVtoArray();console['log'](_0x574232(0x1c0),_0x1b11e4);if(typeof _0x1b11e4==_0x574232(0x27f)){console[_0x574232(0x2a5)](_0x574232(0x23a)),$('#Tips')[_0x574232(0x220)](_0x574232(0x289)),$(_0x574232(0x25f))[_0x574232(0x220)](''),$('#loader1')[_0x574232(0x1b7)]();return;}else _0x225372=_0x1b11e4['_AddressArray'],_0x234cd1=_0x1b11e4['_AmountArray'],console[_0x574232(0x2a5)]('SendMultiToken\x20CSVEtherTotal:',CSVEtherTotal),console['log'](_0x574232(0x2b5),SendFee);}console[_0x574232(0x2a5)](_0x574232(0x1fd),_0x225372),console['log'](_0x574232(0x213),_0x234cd1),console['log'](_0x574232(0x2a7),contractAdress),_Contract=await new web3['eth'][(_0x574232(0x29b))](SmartContractABI,contractAdress,{'from':web3[_0x574232(0x280)][_0x574232(0x1f8)]});var _0x136c38='';document[_0x574232(0x2a0)]('SendTokenRadioID')['checked']?(console['log']('Send\x20Token...'),_0x136c38=document['getElementById'](_0x574232(0x208))[_0x574232(0x300)]):(console[_0x574232(0x2a5)]('Send\x20ETH...'),_0x136c38=_0x574232(0x22f));var _0x535046=0x1d1a94a2001;console[_0x574232(0x2a5)](_0x574232(0x1dc),FeeReciever);var _0xd098fd=await web3[_0x574232(0x1f4)]['getGasPrice']();console['log']('gasPrice:'+_0xd098fd);var _0x8937ef,_0x284be2=web3[_0x574232(0x2d8)][_0x574232(0x263)](BeeFee[_0x574232(0x292)]());console[_0x574232(0x2a5)](_0x574232(0x1e8),BeeFee),SendFee=SendFee['toString'](),console['log'](_0x574232(0x22b),_0x284be2),console[_0x574232(0x2a5)](_0x574232(0x202),_0x136c38),console[_0x574232(0x2a5)](_0x574232(0x2f2),SendFee),await _Contract[_0x574232(0x247)][_0x574232(0x1db)](_0x225372,_0x234cd1,_0x136c38,FeeReciever,_0x284be2)[_0x574232(0x20c)]({'from':web3['currentProvider']['selectedAddress'],'value':SendFee})[_0x574232(0x1ff)](function(_0x4daa60){_0x8937ef=_0x4daa60;})[_0x574232(0x26b)](function(_0x1b985e){var _0x49ecb5=_0x574232;console[_0x49ecb5(0x2a5)](_0x49ecb5(0x301),_0x1b985e),$(_0x49ecb5(0x1ea))[_0x49ecb5(0x1b7)]();}),console[_0x574232(0x2a5)](_0x574232(0x2d4)+_0x8937ef),document['getElementById'](_0x574232(0x23f))[_0x574232(0x262)]?(console[_0x574232(0x2a5)](_0x574232(0x248)),await _Contract[_0x574232(0x247)][_0x574232(0x1db)](_0x225372,_0x234cd1,_0x136c38,FeeReciever,_0x284be2)[_0x574232(0x1d1)]({'from':web3[_0x574232(0x280)][_0x574232(0x1f8)],'gas':_0x8937ef,'gasPrice':_0xd098fd,'value':SendFee},function(_0x32ea27,_0x4e2caa){var _0x3af720=_0x574232;!_0x32ea27?console[_0x3af720(0x2a5)](_0x3af720(0x24b),_0x4e2caa):(console['log']('multiSender\x20can\x20not\x20connect\x20to\x20the\x20smart\x20contract\x20or\x20less\x20than\x20100'),_0x32ea27['message'][_0x3af720(0x2d1)](_0x3af720(0x2eb))&&(console[_0x3af720(0x2a5)](_0x3af720(0x2eb)),$(_0x3af720(0x1ea))['hide']()));})[_0x574232(0x2e2)](_0x574232(0x2b8),function(_0x361416){var _0x198fc7=_0x574232;console[_0x198fc7(0x2a5)](_0x198fc7(0x256),_0x361416);var _0x39f6e1=BlockchainScan+_0x198fc7(0x28a)+_0x361416;$(_0x198fc7(0x1cd))[_0x198fc7(0x220)]('Transaction\x20Hash:\x20'+_0x198fc7(0x275)+_0x39f6e1+'\x20target=\x22_blank\x22>'+_0x361416+_0x198fc7(0x223));})['once'](_0x574232(0x21f),function(_0x4edfed){var _0x5d3c9a=_0x574232;console['log'](_0x5d3c9a(0x2ae),_0x4edfed),document[_0x5d3c9a(0x2a0)](_0x5d3c9a(0x308))[_0x5d3c9a(0x302)][_0x5d3c9a(0x239)]=_0x5d3c9a(0x22a),$('#loader1')[_0x5d3c9a(0x1b7)]();})):(console[_0x574232(0x2a5)](_0x574232(0x1ed)),await _Contract['methods'][_0x574232(0x1db)](_0x225372,_0x234cd1,_0x136c38,FeeReciever,_0x284be2)[_0x574232(0x1d1)]({'from':web3[_0x574232(0x280)][_0x574232(0x1f8)],'value':SendFee},function(_0x227661,_0x4506f5){var _0x3f697f=_0x574232;!_0x227661?console[_0x3f697f(0x2a5)](_0x3f697f(0x24b),_0x4506f5):(console['log'](_0x3f697f(0x254)),_0x227661[_0x3f697f(0x310)][_0x3f697f(0x2d1)]('User\x20denied\x20transaction\x20signature')&&(console['log'](_0x3f697f(0x2eb)),$('#loader1')[_0x3f697f(0x1b7)]()));})[_0x574232(0x2e2)](_0x574232(0x2b8),function(_0x33c4d0){var _0x4e00cf=_0x574232;console[_0x4e00cf(0x2a5)](_0x4e00cf(0x256),_0x33c4d0);var _0x2fb08a=BlockchainScan+_0x33c4d0;$(_0x4e00cf(0x1cd))[_0x4e00cf(0x220)](_0x4e00cf(0x303)+_0x4e00cf(0x275)+_0x2fb08a+'\x20target=\x22_blank\x22>'+_0x33c4d0+'</a>');})[_0x574232(0x2e2)](_0x574232(0x21f),function(_0x254510){var _0x495f33=_0x574232;console[_0x495f33(0x2a5)](_0x495f33(0x2ae),_0x254510),document[_0x495f33(0x2a0)](_0x495f33(0x308))[_0x495f33(0x302)][_0x495f33(0x239)]=_0x495f33(0x22a),$(_0x495f33(0x1ea))[_0x495f33(0x1b7)]();}));}async function GetEndTime(){var _0xa8a476=_0x45dbb5;await myContract[_0xa8a476(0x247)][_0xa8a476(0x28c)]()[_0xa8a476(0x28d)]({'from':web3[_0xa8a476(0x280)][_0xa8a476(0x1f8)]},function(_0x2a96ea,_0x5d0b1d){var _0x1b1625=_0xa8a476;if(!_0x2a96ea){console[_0x1b1625(0x2a5)](_0x1b1625(0x2d7),_0x5d0b1d);var _0x58ec10=_0x5d0b1d+_0x1b1625(0x2e8);TimeCount(_0x58ec10);}else console['log'](_0x1b1625(0x2aa),_0x2a96ea);});}async function GetRewardPool(){var _0x316edf=_0x45dbb5;await myContract[_0x316edf(0x247)][_0x316edf(0x1d9)]()[_0x316edf(0x28d)]({'from':web3['currentProvider'][_0x316edf(0x1f8)]},function(_0x2bd999,_0x56e712){var _0x345207=_0x316edf;!_0x2bd999?(console[_0x345207(0x2a5)](_0x345207(0x1c4),_0x56e712),document[_0x345207(0x2a0)]('RewardPool')['innerHTML']='Reward\x20coins\x20Pool:'+web3[_0x345207(0x2d8)][_0x345207(0x1fc)](_0x56e712,_0x345207(0x1a3))):console[_0x345207(0x2a5)]('RewardPool\x20can\x20not\x20connect\x20to\x20the\x20smart\x20contract',_0x2bd999);});}function addZero(_0x1877cf){var _0x556e88=_0x45dbb5,_0xed8b89=_0x1877cf+_0x556e88(0x203);return _0xed8b89;}function component(_0x54e7a7,_0x53cb12){var _0x59835b=_0x45dbb5;return Math[_0x59835b(0x1b5)](_0x54e7a7/_0x53cb12);}function TimeCount(_0x19fb0b){var _0x22b007=setInterval(function(){var _0x4bb899=_0x1874,_0x2e41a5=new Date()[_0x4bb899(0x1bb)](),_0x1c5611=_0x19fb0b-_0x2e41a5,_0x333185=Math[_0x4bb899(0x1b5)](_0x1c5611/(0x3e8*0x3c*0x3c*0x18)),_0x2f3f1d=Math[_0x4bb899(0x1b5)](_0x1c5611%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x139085=Math[_0x4bb899(0x1b5)](_0x1c5611%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x5f384f=Math[_0x4bb899(0x1b5)](_0x1c5611%(0x3e8*0x3c)/0x3e8);$(_0x4bb899(0x2cd))['html'](_0x333185+_0x4bb899(0x2c0)),$(_0x4bb899(0x1bd))[_0x4bb899(0x220)](_0x2f3f1d+_0x4bb899(0x1f7)),$(_0x4bb899(0x19d))[_0x4bb899(0x220)](_0x139085+_0x4bb899(0x214)),$(_0x4bb899(0x2e7))[_0x4bb899(0x220)](_0x5f384f+_0x4bb899(0x251)),_0x1c5611<0x0&&(clearInterval(_0x22b007),$(_0x4bb899(0x2cd))['html']('0'+_0x4bb899(0x2c0)),$(_0x4bb899(0x1bd))[_0x4bb899(0x220)]('0'+_0x4bb899(0x1f7)),$('#minutes')['html']('0'+_0x4bb899(0x214)),$('#seconds')[_0x4bb899(0x220)]('0'+_0x4bb899(0x251)),$(_0x4bb899(0x201))[_0x4bb899(0x1c5)]());},0x3e8);}function ChooseBlockchain(_0x33eac1){var _0x5bdf17=_0x45dbb5;console[_0x5bdf17(0x2a5)](_0x5bdf17(0x238),_0x33eac1),detectEthereumNetwork(_0x33eac1);}async function detectEthereumNetwork(_0x5b04f8){var _0x1824b4=_0x45dbb5,_0x8d76a0={'chainName':_0x1824b4(0x217),'chainxName':_0x1824b4(0x222),'symbol':_0x1824b4(0x222),'rpcUrls':_0x1824b4(0x1b6),'blockExplorerUrls':_0x1824b4(0x297)},_0x55e597={'chainName':_0x1824b4(0x1bf),'chainxName':'Matic','symbol':_0x1824b4(0x276),'rpcUrls':_0x1824b4(0x1ad),'blockExplorerUrls':'https://polygonscan.com'},_0x51eeb3={'chainName':'Huobi\x20ECO\x20Chain\x20Mainnet','chainxName':'HT','symbol':'HT','rpcUrls':_0x1824b4(0x229),'blockExplorerUrls':_0x1824b4(0x1a8)},_0x552bf6={'chainName':_0x1824b4(0x2d9),'chainxName':'FTM','symbol':_0x1824b4(0x25d),'rpcUrls':_0x1824b4(0x20f),'blockExplorerUrls':_0x1824b4(0x2ef)},_0x4a6ee7=_0x5b04f8,_0x3616b3=await web3[_0x1824b4(0x1f4)]['net']['getId']();console['log'](_0x1824b4(0x2bd),_0x3616b3);var _0x59c493;if(_0x4a6ee7==0x38)_0x59c493=_0x8d76a0;else{if(_0x4a6ee7==0x80)_0x59c493=_0x51eeb3;else{if(_0x4a6ee7==0x89)_0x59c493=_0x55e597;else _0x4a6ee7==0xfa&&(_0x59c493=_0x552bf6);}}if(_0x3616b3==_0x4a6ee7&&_0x3616b3!=0x13881)return console[_0x1824b4(0x2a5)](_0x1824b4(0x2ad)),!![];try{$(_0x1824b4(0x2fd))['html'](_0x1824b4(0x309)),await window[_0x1824b4(0x1f9)][_0x1824b4(0x296)]({'method':_0x1824b4(0x2d2),'params':[{'chainId':'0x'+decimalToHexString(parseInt(_0x5b04f8))}]}),window[_0x1824b4(0x1cb)]['reload']();}catch(_0x63df03){console[_0x1824b4(0x2a5)](_0x1824b4(0x1d5),_0x63df03[_0x1824b4(0x1a6)]);if(_0x63df03[_0x1824b4(0x1a6)]==0x1326)try{console[_0x1824b4(0x2a5)]('not\x20found\x20network,now\x20add\x20it\x20.',_0x63df03[_0x1824b4(0x1a6)]),await window[_0x1824b4(0x1f9)]['request']({'method':_0x1824b4(0x282),'params':[{'chainId':'0x'+decimalToHexString(parseInt(_0x5b04f8)),'chainName':_0x59c493[_0x1824b4(0x307)],'nativeCurrency':{'name':_0x59c493['chainxName'],'symbol':_0x59c493['symbol'],'decimals':0x12},'rpcUrls':[_0x59c493[_0x1824b4(0x2b9)]],'blockExplorerUrls':[_0x59c493[_0x1824b4(0x283)]]}]});return![];window[_0x1824b4(0x1cb)]['reload']();}catch(_0x24a472){if(_0x24a472[_0x1824b4(0x1a6)]==0xfa1)return console[_0x1824b4(0x2a5)](_0x1824b4(0x2e6),_0x24a472['message']),$(_0x1824b4(0x1ea))[_0x1824b4(0x1b7)](),$(_0x1824b4(0x2fd))[_0x1824b4(0x220)](''),![];}else{if(_0x63df03['code']==0xfa1)return console['log'](_0x1824b4(0x250),_0x63df03[_0x1824b4(0x310)]),$(_0x1824b4(0x1ea))[_0x1824b4(0x1b7)](),$(_0x1824b4(0x2fd))[_0x1824b4(0x220)](''),![];}}$('#Tips')[_0x1824b4(0x220)]('');}function decimalToHexString(_0x14114c){var _0x272131=_0x45dbb5;return _0x14114c<0x0&&(_0x14114c=0xffffffff+_0x14114c+0x1),_0x14114c[_0x272131(0x292)](0x10)[_0x272131(0x2e1)]();}function ISendInputChange(){var _0x28e7c1=_0x45dbb5;parseFloat(document[_0x28e7c1(0x2a0)](_0x28e7c1(0x2ac))[_0x28e7c1(0x300)])>0x2&&(document[_0x28e7c1(0x2a0)]('IWantInput')['value']=parseInt(document[_0x28e7c1(0x2a0)](_0x28e7c1(0x2ac))['value']),document['getElementById'](_0x28e7c1(0x2ac))[_0x28e7c1(0x300)]=parseInt(document[_0x28e7c1(0x2a0)](_0x28e7c1(0x2ac))[_0x28e7c1(0x300)]),$(_0x28e7c1(0x2c7))[_0x28e7c1(0x220)](_0x28e7c1(0x267)+(parseInt(document['getElementById'](_0x28e7c1(0x2ac))[_0x28e7c1(0x300)])+0x1)+'\x20USDT'),console[_0x28e7c1(0x2a5)](_0x28e7c1(0x274)),console[_0x28e7c1(0x2a5)](_0x28e7c1(0x266),polygonLimit),console[_0x28e7c1(0x2a5)](_0x28e7c1(0x261),binanceLimit),console[_0x28e7c1(0x2a5)](_0x28e7c1(0x20d),fantomLimit));}async function approveThis(_0x1d1fb5){var _0x3bd9d5=_0x45dbb5;try{const _0x22bca7=web3[_0x3bd9d5(0x2d8)][_0x3bd9d5(0x1f2)](document[_0x3bd9d5(0x2a0)]('TokenAddress')['value']);}catch(_0x545390){console[_0x3bd9d5(0x2d0)](_0x3bd9d5(0x2dc),_0x545390['message']),TokenContractAddress=document['getElementById'](_0x3bd9d5(0x208))[_0x3bd9d5(0x300)],document[_0x3bd9d5(0x2a0)]('TokenAddress')[_0x3bd9d5(0x228)]=![];return;};$(_0x3bd9d5(0x30c))['show']();var _0x3bc674=document[_0x3bd9d5(0x2a0)](_0x3bd9d5(0x208))[_0x3bd9d5(0x300)];TokenContract=await new web3[(_0x3bd9d5(0x1f4))]['Contract'](TokenSmartContractABI,_0x3bc674,{'from':web3[_0x3bd9d5(0x280)][_0x3bd9d5(0x1f8)]});const _0x575d57=await TokenContract[_0x3bd9d5(0x247)][_0x3bd9d5(0x1ee)](_0x1d1fb5,'0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')[_0x3bd9d5(0x1d1)]({'from':web3[_0x3bd9d5(0x280)]['selectedAddress']},function(_0x856b9f,_0x32983a){var _0x2ccdaa=_0x3bd9d5;!_0x856b9f?console[_0x2ccdaa(0x2a5)]('Approval\x20successfull!'):($(_0x2ccdaa(0x30c))[_0x2ccdaa(0x1b7)](),console['log'](_0x2ccdaa(0x294)));})[_0x3bd9d5(0x2e2)](_0x3bd9d5(0x2b8),function(_0x935a3b){var _0x3eb616=_0x3bd9d5;console[_0x3eb616(0x2a5)]('Approval\x20hash:',_0x935a3b);})['once'](_0x3bd9d5(0x21f),function(_0x5c32e6){var _0x509b9c=_0x3bd9d5;console[_0x509b9c(0x2a5)](_0x509b9c(0x1c1),_0x5c32e6),$(_0x509b9c(0x2f6))[_0x509b9c(0x1b7)](),$(_0x509b9c(0x23c))[_0x509b9c(0x1c5)](),$(_0x509b9c(0x30c))[_0x509b9c(0x1b7)]();});}async function getApproveStatus(_0xbce456,_0x2695c5){var _0x23c05f=_0x45dbb5;console['log'](_0x23c05f(0x210)),await TokenContract[_0x23c05f(0x247)][_0x23c05f(0x219)](_0xbce456,_0x2695c5)[_0x23c05f(0x28d)]({'from':web3[_0x23c05f(0x280)]['selectedAddress']},function(_0x238baa,_0x3dd087){var _0x523429=_0x23c05f;!_0x238baa&&(console['log'](_0x523429(0x2ce),_0x3dd087),_0x3dd087>0x0?($(_0x523429(0x2f6))[_0x523429(0x1b7)](),$(_0x523429(0x23c))[_0x523429(0x1c5)](),document[_0x523429(0x2a0)](_0x523429(0x208))[_0x523429(0x228)]=![],console['log'](_0x523429(0x1b0))):($(_0x523429(0x2f6))[_0x523429(0x1c5)](),$('#MultiSendButton')[_0x523429(0x1b7)](),document['getElementById']('TokenAddress')[_0x523429(0x228)]=![],console['log']('have\x20not\x20approved,please\x20approve\x20first!')));});}async function balanceOf(_0x46259b,_0x47268b){var _0x1b9a26=_0x45dbb5;$(_0x1b9a26(0x246))[_0x1b9a26(0x220)]('Loading...'),await _0x47268b[_0x1b9a26(0x247)]['balanceOf'](_0x46259b)[_0x1b9a26(0x28d)]({'from':web3[_0x1b9a26(0x280)]['selectedAddress']},function(_0x52e8ab,_0x30d47b){var _0x5a9035=_0x1b9a26;!_0x52e8ab?(console[_0x5a9035(0x2a5)](_0x5a9035(0x2b6),_0x30d47b),_0x47268b[_0x5a9035(0x247)][_0x5a9035(0x1b3)]()[_0x5a9035(0x28d)](function(_0x3cda0b,_0x595e0e){var _0x170c43=_0x5a9035,_0x5983f2=parseInt(_0x30d47b);console[_0x170c43(0x2a5)](_0x170c43(0x1d6),_0x5983f2);var _0x1ce6cb=Math['pow'](0xa,parseInt(_0x595e0e)),_0x29ca30=_0x5983f2/_0x1ce6cb;console[_0x170c43(0x2a5)](_0x170c43(0x2df),_0x29ca30['toLocaleString']('fullwide',{'useGrouping':![]})),$('#balanceOf')['html'](_0x170c43(0x21b)+_0x29ca30['toLocaleString'](_0x170c43(0x25a),{'useGrouping':![]})),CurrentTokenDecimals=BigInt(_0x595e0e),console[_0x170c43(0x2a5)](_0x170c43(0x1e4),_0x595e0e),console[_0x170c43(0x2a5)](_0x170c43(0x28b),_0x1ce6cb),console[_0x170c43(0x2a5)](_0x170c43(0x1d6),BigInt(_0x5983f2));})):($(_0x5a9035(0x246))['html'](_0x5a9035(0x23d)),document[_0x5a9035(0x2a0)]('TokenAddress')['disabled']=![],console[_0x5a9035(0x2a5)](_0x5a9035(0x298)));});}function SendEtherOrToken(_0x33aa53){var _0x19e02e=_0x45dbb5;if(_0x33aa53=='SendToken')console[_0x19e02e(0x2a5)](_0x19e02e(0x30e),_0x33aa53),document[_0x19e02e(0x2a0)](_0x19e02e(0x24c))[_0x19e02e(0x262)]=!![],document[_0x19e02e(0x2a0)](_0x19e02e(0x1a9))[_0x19e02e(0x262)]=![],SendTokenBool=!![],SendFee=(BigInt(ContractFee)+BigInt(web3[_0x19e02e(0x2d8)][_0x19e02e(0x263)](BeeFee[_0x19e02e(0x292)]())))[_0x19e02e(0x292)](),console[_0x19e02e(0x2a5)](_0x19e02e(0x2e9),SendFee),$(_0x19e02e(0x1a2))[_0x19e02e(0x1c5)](),$(_0x19e02e(0x23c))[_0x19e02e(0x1b7)](),CurrentTokenDecimals=0x0,$(_0x19e02e(0x25f))['html'](''),$(_0x19e02e(0x2fd))[_0x19e02e(0x220)]('');else _0x33aa53==_0x19e02e(0x205)&&(SendTokenBool=![],SendFee=0x0,console[_0x19e02e(0x2a5)](_0x19e02e(0x30e),_0x33aa53),document[_0x19e02e(0x2a0)](_0x19e02e(0x24c))[_0x19e02e(0x262)]=![],document[_0x19e02e(0x2a0)]('SendEtherRadioID')[_0x19e02e(0x262)]=!![],CurrentTokenDecimals=0x12,$(_0x19e02e(0x1a2))['hide'](),$(_0x19e02e(0x23c))[_0x19e02e(0x1c5)]());}function SendType(_0xd2bb7a){var _0x50d71b=_0x45dbb5;if(_0xd2bb7a==_0x50d71b(0x1e3))console[_0x50d71b(0x2a5)](_0x50d71b(0x30e),_0xd2bb7a),document[_0x50d71b(0x2a0)](_0x50d71b(0x24f))[_0x50d71b(0x262)]=!![],document['getElementById'](_0x50d71b(0x2a4))[_0x50d71b(0x262)]=![],$(_0x50d71b(0x243))[_0x50d71b(0x1c5)](),$('#SendDiffAmountDiv')['hide'](),$(_0x50d71b(0x25f))[_0x50d71b(0x220)](''),$('#Tips')[_0x50d71b(0x220)]('');else _0xd2bb7a==_0x50d71b(0x2de)&&(console['log'](_0x50d71b(0x30e),_0xd2bb7a),document[_0x50d71b(0x2a0)](_0x50d71b(0x24f))['checked']=![],document['getElementById']('SendDiffAmountRadio')[_0x50d71b(0x262)]=!![],$(_0x50d71b(0x243))[_0x50d71b(0x1b7)](),$('#SendDiffAmountDiv')[_0x50d71b(0x1c5)](),Upload());}function checkRadio(_0x2accaa){var _0x542f84=_0x45dbb5;if(_0x2accaa==_0x542f84(0x2e5))console[_0x542f84(0x2a5)]('Choice:\x20',_0x2accaa),document[_0x542f84(0x2a0)](_0x542f84(0x23f))[_0x542f84(0x262)]=!![],document['getElementById'](_0x542f84(0x1d7))[_0x542f84(0x262)]=![],UseHighGasFee=!![],console['log'](_0x542f84(0x1fa),UseHighGasFee);else _0x2accaa==_0x542f84(0x1c9)&&(console[_0x542f84(0x2a5)](_0x542f84(0x30e),_0x2accaa),document['getElementById'](_0x542f84(0x1d7))['checked']=!![],document[_0x542f84(0x2a0)](_0x542f84(0x23f))[_0x542f84(0x262)]=![],UseHighGasFee=![],console['log'](_0x542f84(0x1fa),UseHighGasFee));}function Upload(){var _0xdce5a5=_0x45dbb5,_0x1ec1b8=document[_0xdce5a5(0x2a0)](_0xdce5a5(0x1d2)),_0x6f638e=/^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;if(_0x6f638e['test'](_0x1ec1b8[_0xdce5a5(0x300)][_0xdce5a5(0x269)]())){if(typeof FileReader!=_0xdce5a5(0x27f)){var _0x564ac0=new FileReader();_0x564ac0['onload']=function(_0x22ce04){var _0x5650a1=_0xdce5a5,_0x59c4cd=document[_0x5650a1(0x2c6)](_0x5650a1(0x2f5)),_0x129287=_0x22ce04[_0x5650a1(0x2a6)][_0x5650a1(0x1e0)][_0x5650a1(0x226)]('\x0a');for(var _0x1d8de6=0x0;_0x1d8de6<_0x129287[_0x5650a1(0x200)];_0x1d8de6++){var _0xddcb75=_0x59c4cd[_0x5650a1(0x2da)](-0x1),_0x1c8d07=_0x129287[_0x1d8de6][_0x5650a1(0x226)](',');for(var _0x4458f6=0x0;_0x4458f6<_0x1c8d07[_0x5650a1(0x200)];_0x4458f6++){var _0x5d9b45=_0xddcb75['insertCell'](-0x1);_0x5d9b45['innerHTML']=_0x1c8d07[_0x4458f6];}}var _0x9c3afe=document[_0x5650a1(0x2a0)](_0x5650a1(0x259));_0x9c3afe[_0x5650a1(0x2be)]='',_0x9c3afe[_0x5650a1(0x2fa)](_0x59c4cd);},_0x564ac0[_0xdce5a5(0x288)](_0x1ec1b8[_0xdce5a5(0x272)][0x0]);}else $(_0xdce5a5(0x2fd))[_0xdce5a5(0x220)]('This\x20browser\x20does\x20not\x20support\x20HTML5.'),$('#loader1')['hide']();}else $(_0xdce5a5(0x2fd))[_0xdce5a5(0x220)]('Please\x20choose\x20a\x20valid\x20CSV\x20file,\x20CSV\x20file\x20name\x20are\x20English\x20letters\x20only,like:\x20abc123.csv'),$('#loader1')[_0xdce5a5(0x1b7)]();}function _0x1874(_0x4d8f0,_0x4d79b0){var _0x19d5ee=_0x3de1();return _0x1874=function(_0x45d612,_0x16ce80){_0x45d612=_0x45d612-0x19b;var _0x21feb2=_0x19d5ee[_0x45d612];return _0x21feb2;},_0x1874(_0x4d8f0,_0x4d79b0);}function multiply(_0x1cc93d,_0x192e70){var _0x17ca04=_0x45dbb5;let _0x4f53c0=0x0,_0xdd9a6=0x0;_0x1cc93d<0x9&&(_0x1cc93d*=0xa,_0x4f53c0=0x1);_0x192e70<0x9&&(_0x192e70*=0xa,_0xdd9a6=0x1);let _0x45058b=_0x1cc93d[_0x17ca04(0x200)],_0x37181d=_0x192e70[_0x17ca04(0x200)],_0x3059f0=[],_0x107eb7=[];console['log'](_0x1cc93d,_0x192e70);while(_0x1cc93d[_0x17ca04(0x200)]>0x7){_0x3059f0['push'](_0x1cc93d['substring'](_0x1cc93d[_0x17ca04(0x200)]-0x7,_0x1cc93d[_0x17ca04(0x200)])),_0x1cc93d=_0x1cc93d[_0x17ca04(0x2e4)](0x0,_0x1cc93d[_0x17ca04(0x200)]-0x7);}_0x3059f0[_0x17ca04(0x1ef)](_0x1cc93d);while(_0x192e70[_0x17ca04(0x200)]>0x7){_0x107eb7[_0x17ca04(0x1ef)](_0x192e70[_0x17ca04(0x2e4)](_0x192e70[_0x17ca04(0x200)]-0x7,_0x192e70[_0x17ca04(0x200)])),_0x192e70=_0x192e70[_0x17ca04(0x2e4)](0x0,_0x192e70['length']-0x7);}_0x107eb7[_0x17ca04(0x1ef)](_0x192e70),_0x3059f0=_0x3059f0[_0x17ca04(0x2af)](),_0x107eb7=_0x107eb7['reverse'](),console[_0x17ca04(0x2a5)](_0x3059f0,_0x107eb7);let _0x5c168e=[];for(var _0x193eca=_0x3059f0[_0x17ca04(0x200)]-0x1,_0x481604=0x0;_0x193eca>=0x0;_0x193eca--,_0x481604++){_0x5c168e[_0x481604]=_0x107eb7[_0x17ca04(0x2f7)](_0x3c25e5=>_0x3c25e5*_0x3059f0[_0x193eca]===NaN?'0000000':_0x3c25e5*_0x3059f0[_0x193eca]);var _0x125472=0x0;while(_0x125472<_0x481604){_0x5c168e[_0x481604]['push'](0x0),_0x125472+=0x1;}}console['log'](_0x5c168e);var _0x1d90a0=_0x5c168e[_0x5c168e[_0x17ca04(0x200)]-0x1];for(var _0x481604=0x1;_0x481604<_0x1d90a0[_0x17ca04(0x200)];_0x481604++){for(var _0x193eca=0x0;_0x193eca<_0x5c168e[_0x17ca04(0x200)]-0x1;_0x193eca++){_0x5c168e[_0x193eca]['length']>=_0x481604&&(_0x1d90a0[_0x1d90a0['length']-_0x481604]+=_0x5c168e[_0x193eca][_0x5c168e[_0x193eca][_0x17ca04(0x200)]-_0x481604]);}}console[_0x17ca04(0x2a5)](_0x1d90a0);let _0x201dbf=[];for(var _0x193eca=0x0;_0x193eca<_0x1d90a0[_0x17ca04(0x200)];_0x193eca++){_0x201dbf[_0x17ca04(0x1ef)]('');}for(var _0x193eca=0x1;_0x193eca<=_0x1d90a0['length'];_0x193eca++)if(_0x193eca!==_0x1d90a0[_0x17ca04(0x200)])_0x201dbf[_0x201dbf[_0x17ca04(0x200)]-_0x193eca]=_0x1d90a0[_0x1d90a0[_0x17ca04(0x200)]-_0x193eca][_0x17ca04(0x292)]()[_0x17ca04(0x2e4)](_0x1d90a0[_0x1d90a0[_0x17ca04(0x200)]-_0x193eca][_0x17ca04(0x292)]()[_0x17ca04(0x200)]-0x7,_0x1d90a0[_0x1d90a0[_0x17ca04(0x200)]-_0x193eca][_0x17ca04(0x292)]()['length']),_0x1d90a0[_0x1d90a0[_0x17ca04(0x200)]-_0x193eca-0x1]+=parseInt(_0x1d90a0[_0x1d90a0['length']-_0x193eca][_0x17ca04(0x292)]()[_0x17ca04(0x2e4)](0x0,_0x1d90a0[_0x1d90a0['length']-_0x193eca][_0x17ca04(0x292)]()[_0x17ca04(0x200)]-0x7));else _0x201dbf[0x0]=_0x1d90a0[0x0];return console[_0x17ca04(0x2a5)](_0x201dbf),console['log'](_0x1cc93d,_0x192e70),_0x4f53c0&&(_0x201dbf[_0x201dbf[_0x17ca04(0x200)]-0x1]/=0xa),_0xdd9a6&&(_0x201dbf[_0x201dbf[_0x17ca04(0x200)]-0x1]/=0xa),_0x201dbf[_0x17ca04(0x260)]('');}async function ReadCSVtoArray(){var _0x366488=_0x45dbb5;let _0xdbb166=[],_0x2ab61f=[];var _0xdf3962=document[_0x366488(0x2a0)]('fileUpload'),_0x177b36=/^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;if(_0x177b36[_0x366488(0x313)](_0xdf3962[_0x366488(0x300)][_0x366488(0x269)]())){if(typeof FileReader!=_0x366488(0x27f)){var _0x1f669c=new FileReader();return _0x1f669c['onload']=function(_0x13439a){var _0x347f8e=_0x366488,_0xc76d72=document['createElement'](_0x347f8e(0x2f5)),_0x594a2f=_0x13439a['target']['result'][_0x347f8e(0x226)]('\x0a'),_0x2655e0=0x0;for(var _0x422c68=0x0;_0x422c68<_0x594a2f[_0x347f8e(0x200)];_0x422c68++){var _0x3f43c7=_0xc76d72[_0x347f8e(0x2da)](-0x1),_0x4d0e9a=_0x594a2f[_0x422c68][_0x347f8e(0x226)](',');if(_0x4d0e9a[0x0]!=''&&_0x4d0e9a[0x1]!=''){_0xdbb166[_0x347f8e(0x1ef)]($[_0x347f8e(0x28e)](_0x4d0e9a[0x0]));var _0x310d52=BigNumber(parseInt(_0x4d0e9a[0x1]*Math[_0x347f8e(0x29f)](0xa,CurrentTokenDecimals[_0x347f8e(0x292)]()))[_0x347f8e(0x292)]()),_0x4a6b74=web3[_0x347f8e(0x2d8)]['toBN'](_0x310d52);_0x2655e0=_0x2655e0+parseInt(web3['utils'][_0x347f8e(0x263)](parseFloat(_0x4d0e9a[0x1])[_0x347f8e(0x292)]())),console['log'](_0x347f8e(0x1c6),parseFloat(_0x4d0e9a[0x1])),_0x2ab61f['push'](_0x4a6b74);}for(var _0x27164b=0x0;_0x27164b<_0x4d0e9a[_0x347f8e(0x200)];_0x27164b++){var _0x1a43ce=_0x3f43c7[_0x347f8e(0x242)](-0x1);_0x1a43ce[_0x347f8e(0x2be)]=_0x4d0e9a[_0x27164b];}}if(document['getElementById'](_0x347f8e(0x1a9))[_0x347f8e(0x262)]){console[_0x347f8e(0x2a5)]('Send\x20ETH\x20throgh\x20CSV.....'),CSVEtherTotal=_0x2655e0,console[_0x347f8e(0x2a5)](_0x347f8e(0x1f6),CurrentTokenDecimals),console['log'](_0x347f8e(0x1cc),_0x2655e0),console[_0x347f8e(0x2a5)](_0x347f8e(0x2ee),CSVEtherTotal);var _0x3dfd29=BigNumber((CSVEtherTotal*Math[_0x347f8e(0x29f)](0xa,CurrentTokenDecimals['toString']()))[_0x347f8e(0x292)]()),_0x5d2007=web3['utils'][_0x347f8e(0x263)](parseInt(_0x3dfd29)[_0x347f8e(0x292)]());console[_0x347f8e(0x2a5)]('CSVEtherTotal',parseFloat(CSVEtherTotal)),console[_0x347f8e(0x2a5)](_0x347f8e(0x244),web3['utils'][_0x347f8e(0x1fc)](ContractFee)),console[_0x347f8e(0x2a5)]('BeeFee',parseFloat(BeeFee)),SendFee=BigInt(CSVEtherTotal)+BigInt(parseInt(ContractFee))+BigInt(web3['utils'][_0x347f8e(0x263)](BeeFee[_0x347f8e(0x292)]())),console['log']('parseFloat\x20SendFee:',SendFee),SendFee=SendFee[_0x347f8e(0x292)](),console[_0x347f8e(0x2a5)](_0x347f8e(0x1af),SendFee[_0x347f8e(0x292)]());}var _0x484b5e=document[_0x347f8e(0x2a0)]('dvCSV');_0x484b5e['innerHTML']='',_0x484b5e[_0x347f8e(0x2fa)](_0xc76d72);},_0x1f669c[_0x366488(0x288)](_0xdf3962[_0x366488(0x272)][0x0]),{'_AddressArray':_0xdbb166,'_AmountArray':_0x2ab61f};}else $('#Tips')['html']('This\x20browser\x20does\x20not\x20support\x20HTML5.'),$(_0x366488(0x1ea))[_0x366488(0x1b7)]();}else $('#Tips')[_0x366488(0x220)]('Please\x20upload\x20a\x20valid\x20CSV\x20file.'),$(_0x366488(0x1ea))[_0x366488(0x1b7)]();}$(_0x45dbb5(0x21e))[_0x45dbb5(0x2bc)](function(){var _0x1b465c=_0x45dbb5;$(_0x1b465c(0x1cd))['html'](''),$(_0x1b465c(0x2fd))[_0x1b465c(0x220)](''),Upload();}),$('#li')[_0x45dbb5(0x236)](function(){var _0x3ee5d4=_0x45dbb5;$(_0x3ee5d4(0x1a1))[_0x3ee5d4(0x1b2)](_0x3ee5d4(0x1a0)),$(this)[_0x3ee5d4(0x25e)](_0x3ee5d4(0x1a0));},function(){var _0x47b63f=_0x45dbb5;$(this)[_0x47b63f(0x1b2)](_0x47b63f(0x1a0)),$('#nav\x20li')['first']()['addClass'](_0x47b63f(0x1a0));});
 </script>
+
+
+
 </body>
+
 </html>
