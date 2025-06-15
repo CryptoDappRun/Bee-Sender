@@ -32,11 +32,7 @@ BNB Chain, Polygon, Avalanche, Arbitrum One, Optimism, Fantom, Moonbeam, Base, S
 # Need Earn cryptocurrency?
 Open config.js<br>
 Change the feeReceiver to your own address,and also feePercentToReceiver<br>
-
-
-# Deploy to github page
-
-or you can download source ,and put to any web server.then start earn cryptocurrency!<br><br>
+and then Deploy to github page or you can download the whole project ,and put to any web server.then start earn cryptocurrency!<br><br>
 
 
 # Deploy to other specified blockchains
