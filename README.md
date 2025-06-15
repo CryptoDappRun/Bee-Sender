@@ -30,7 +30,7 @@ BNB Chain, Polygon, Avalanche, Arbitrum One, Optimism, Fantom, Moonbeam, Base, S
 
 
 # Need Earn cryptocurrency?
-Open js/config.js<br>
+Open config.js<br>
 Change the feeReceiver to your own address,and also feePercentToReceiver<br>
 
 
