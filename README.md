@@ -7,6 +7,7 @@ https://cryptodapprun.github.io/Bee-Sender/
 ``Batch Send ETH/BNB/Matic...``<br>
 Current support Blockchain networks:<br>
 BNB Chain, Polygon, Avalanche, Arbitrum One, Optimism, Fantom, Moonbeam, Base, Scroll, Blast, Cronos, Mantle, Mode, Gnosis<br><br>
+<img src="img/1.png" width="25" height="25" alt="eth">
 <img src="img/56.png" width="25" height="25" alt="bnb">
 <img src="img/250.png" width="25" height="25" alt="ftm">
 <img src="img/137.png" width="25" height="25" alt="matic"> 
